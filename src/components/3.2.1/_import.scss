@@ -1,7 +1,7 @@
 // Base
-@import "variables";
-@import "mixin";
-@import "base";
+@import "../Common/variables";
+@import "../Common/mixin";
+@import "../Common/base";
 
 // Elements
 @import "link";
@@ -88,7 +88,7 @@
 @import "position";
 @import "transition";
 @import "visibility";
-@import "inverse";
+@import "../Common/inverse";
 
 // Need to be loaded last
 @import "print";

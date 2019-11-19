@@ -1,7 +1,7 @@
 // Base
-@import "variables";
-@import "mixin";
-@import "base";
+@import "../Common/variables";
+@import "../Common/mixin";
+@import "../Common/base";
 
 // Elements
 @import "link";
