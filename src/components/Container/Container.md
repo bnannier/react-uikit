@@ -1,4 +1,3 @@
-### Container
 https://getuikit.com/docs/container
 
 ### Usage

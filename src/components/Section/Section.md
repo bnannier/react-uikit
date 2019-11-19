@@ -1,4 +1,3 @@
-### Create horizontal layout sections with different background colors and styles.
 https://getuikit.com/docs/section
 
 ### Usage
