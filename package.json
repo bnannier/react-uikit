@@ -10,12 +10,10 @@
     "react-scripts": "3.2.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build"
+    "styleguide:build": "styleguidist build",
+    "deploy": "gh-pages-deploy",
+    "clean-source": "rimraf README.md src webroot package.json"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -38,6 +36,7 @@
     "@babel/plugin-proposal-class-properties": "^7.7.0",
     "@babel/plugin-proposal-export-default-from": "^7.5.2",
     "@babel/plugin-transform-arrow-functions": "^7.2.0",
+    "gh-pages-deploy": "^0.5.1",
     "lint-staged": "^9.4.3",
     "node-sass": "^4.13.0",
     "prettier": "^1.19.1",
