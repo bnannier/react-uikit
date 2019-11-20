@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.48aaf25d.chunk.css",
+    "main.js": "/build/main.af635994.js",
+    "runtime-main.js": "/build/bundle.86c6ad91.js",
+    "build/2.fab40011.js": "/build/2.fab40011.js",
+    "build/2.fab40011.js.LICENSE": "/build/2.fab40011.js.LICENSE",
+    "index.html": "/index.html",
+    "precache-manifest.c0e813255dfc09ac630e1f6678bcfe86.js": "/precache-manifest.c0e813255dfc09ac630e1f6678bcfe86.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.48aaf25d.chunk.css.map": "/static/css/main.48aaf25d.chunk.css.map"
+  },
+  "entrypoints": [
+    "build/bundle.86c6ad91.js",
+    "build/2.fab40011.js",
+    "static/css/main.48aaf25d.chunk.css",
+    "build/main.af635994.js"
+  ]
+}
