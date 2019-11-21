@@ -20,7 +20,7 @@
 @import "../Container/container";
 @import "grid";
 @import "tile";
-@import "card";
+@import "../Card/card";
 
 // Common
 @import "close"; // After: Icon
@@ -73,7 +73,7 @@
 
 // Utilities
 @import "animation";
-@import "width";
+@import "../Common/width";
 @import "height";
 @import "text";
 @import "column";

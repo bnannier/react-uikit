@@ -7,7 +7,7 @@ xxx
 ### Style modifiers
 xxx
 
-```js
+```jsx
 <React.Fragment>
     <Container primary>Default size modifier</Container>
 </React.Fragment>
@@ -17,7 +17,7 @@ xxx
 ### Size modifiers
 xxx
 
-```js
+```jsx
 <React.Fragment>
     <Container primary>Default size modifier</Container>
 </React.Fragment>

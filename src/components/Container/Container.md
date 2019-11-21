@@ -7,7 +7,7 @@ The element will be centered and have padding on the sides, that adapts automati
 ### Size modifiers
 Add one of the following classes to the container to apply a different max-width.
 
-```js
+```jsx
 <React.Fragment>
     <Container>Default</Container>
     <Container xsmall>Extra Small</Container>

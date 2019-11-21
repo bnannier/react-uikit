@@ -6,7 +6,7 @@ Sections are used to separate the content of a page into differently styled bloc
 ### Style modifiers
 To apply different background colors and paddings, add one of the following classes.
 
-```js
+```jsx
 <React.Fragment>
     <Section>Default</Section>
     <Section muted>Muted</Section>
@@ -20,7 +20,7 @@ By default, a section is blank. That is why it is important to add a modifier cl
 ### Size modifiers
 You can add different paddings to each section or remove it altogether.
 
-```js
+```jsx
 <React.Fragment>
     <Section primary>Default size modifier</Section>
     <Section secondary xsmall>Decrease a section's padding to a minimum using the xsmall size modifier</Section>

@@ -11,6 +11,7 @@ const Section = (props) =>{
 
 const applyStyles = (props) => {
     return classNames("uk-section",
+        {"uk-section-default": props.default},
         {"uk-section-muted": props.muted},
         {"uk-section-primary": props.primary},
         {"uk-section-secondary": props.secondary},
@@ -22,25 +23,28 @@ const applyStyles = (props) => {
 };
 
 Section.propTypes = {
+    /** Adds the default background color of your site */
+    default: PropTypes.bool,
     /** Adds a muted background color */
     muted: PropTypes.bool,
     /** Adds a primary background color */
     primary: PropTypes.bool,
     /** Adds a secondary background color */
     secondary: PropTypes.bool,
-    /** Add this class to decrease a section's padding to a minimum */
+    /** Add this prop to decrease a section's padding to a minimum */
     xsmall: PropTypes.bool,
-    /** Add this class to decrease a section's padding */
+    /** Add this prop to decrease a section's padding */
     small: PropTypes.bool,
-    /** Add this class to increase a section's padding */
+    /** Add this prop to increase a section's padding */
     large: PropTypes.bool,
-    /** Add this class to further increase a section's padding */
+    /** Add this prop to further increase a section's padding */
     xlarge: PropTypes.bool,
     /** Pass children elements to this element */
     children: PropTypes.node,
 };
 
 Section.defaultProps = {
+    default: false,
     muted: false,
     primary: false,
     secondary: false,
