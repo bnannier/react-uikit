@@ -6,5 +6,13 @@ module.exports = {
     skipComponentsWithoutExample: true,
     getExampleFilename(componentPath) {
         return componentPath.replace(/\.js?$/, '.md')
+    },
+    template: {
+        head: {
+            scripts: [
+                {src: 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.min.js'},
+                {src: "https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit-icons.min.js"}
+            ]
+        }
     }
-}
+};

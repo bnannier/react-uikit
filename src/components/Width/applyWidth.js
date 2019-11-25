@@ -3,6 +3,10 @@ import PropTypes from 'prop-types';
 const applyWidth = (props) => {
     let str = " uk-width-";
 
+    if(props.child){
+        str = " uk-child-width-";
+    }
+
     // Affects all device widths, grid columns stay side by side.
     if (props.width) {
         str += props.width + " ";

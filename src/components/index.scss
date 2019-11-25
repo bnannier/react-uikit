@@ -1,12 +1,15 @@
 // 1. Your custom variables and variable overwrites.
 $global-link-color: #DA7D02;
 
-// 2. Import default variables and available mixins.
-@import "./scss/variables-theme.scss";
-@import "./scss/mixins-theme.scss";
+// 2. Import default fonts
+@import '../assets/fnt/font';
 
-// 3. Your custom mixin overwrites.
+// 3. Import default variables and available mixins.
+@import "../assets/scss/variables-theme.scss";
+@import "../assets/scss/mixins-theme.scss";
+
+// 4. Your custom mixin overwrites.
 @mixin hook-card() { color: #000; }
 
-// 4. Import UIkit.
-@import "./scss/uikit-theme.scss";
+// 5. Import UIkit.
+@import "../assets/scss/uikit-theme.scss";

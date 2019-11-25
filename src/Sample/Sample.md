@@ -1,4 +1,4 @@
-https://getuikit.com/docs/Sample
+https://getuikit.com/docs/Grid
 
 ### Usage
 xxx
@@ -8,7 +8,7 @@ xxx
 
 ```jsx
 <React.Fragment>
-    <Sample primary>Default size modifier</Sample>
+    <Grid primary>Default size modifier</Grid>
 </React.Fragment>
 ```
 xxx
@@ -18,6 +18,6 @@ xxx
 
 ```jsx
 <React.Fragment>
-    <Sample primary>Default size modifier</Sample>
+    <Grid primary>Default size modifier</Grid>
 </React.Fragment>
 ```

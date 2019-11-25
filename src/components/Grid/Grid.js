@@ -2,28 +2,28 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-const Sample = (props) =>{
+const Grid = (props) =>{
     return (
-        <div className={applyStyles(props)}>{props.children}</div>
+        <div className={applyStyles(props)} uk-grid="">{props.children}</div>
     )
 };
 
 const applyStyles = (props) => {
-    return classNames("uk-xxx",
+    return classNames("",
         {"uk-xxx": props.xxx}
     )
 };
 
-Sample.propTypes = {
+Grid.propTypes = {
     /** xxx */
     xxx: PropTypes.bool,
     /** Pass children elements to this element */
     children: PropTypes.node,
 };
 
-Sample.defaultProps = {
+Grid.defaultProps = {
     xxx: false,
     children: undefined
 };
 
-export default Sample;
+export default Grid;

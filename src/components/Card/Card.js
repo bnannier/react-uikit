@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import applyWidth from '../Common/width'
+import applyWidth from '../Width/applyWidth'
 import CardTitle from "./CardTitle";
 
 const Card = (props) =>{
