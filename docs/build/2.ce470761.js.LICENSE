@@ -1,5 +1,11 @@
 /*! https://mths.be/regenerate v1.3.3 by @mathias | MIT license */
 
+/*!
+  Copyright (c) 2017 Jed Watson.
+  Licensed under the MIT License (MIT), see
+  http://jedwatson.github.io/classnames
+*/
+
 /**
  * A better abstraction over CSS.
  *
@@ -7,12 +13,6 @@
  * @website https://github.com/cssinjs/jss
  * @license MIT
  */
-
-/*!
-  Copyright (c) 2017 Jed Watson.
-  Licensed under the MIT License (MIT), see
-  http://jedwatson.github.io/classnames
-*/
 
 /*
 object-assign
