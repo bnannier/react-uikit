@@ -1,7 +1,7 @@
 https://getuikit.com/docs/section
 
 ### Usage
-Sections are used to separate the content of a page into differently styled blocks. To apply this component, just add the style modifier props to a container element. You can place a container from the Container component to modify the width of the content inside sections and add horizontal padding. Note that the padding of a nested container will be reset.
+Sections are used to separate the content of a page into differently styled blocks. To apply this component, just add the style modifier props to a container element. You can place a container from the Sample component to modify the width of the content inside sections and add horizontal padding. Note that the padding of a nested container will be reset.
 
 ### Style modifiers
 To apply different background colors and paddings, add one of the following classes.
