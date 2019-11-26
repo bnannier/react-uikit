@@ -10,7 +10,7 @@ const Section = (props) =>{
 };
 
 const applyStyles = (props) => {
-    return classNames("uk-section",
+    return classNames(" uk-section",
         {"uk-section-default": props.default},
         {"uk-section-muted": props.muted},
         {"uk-section-primary": props.primary},
@@ -18,7 +18,8 @@ const applyStyles = (props) => {
         {"uk-section-xsmall": props.xsmall},
         {"uk-section-small": props.small},
         {"uk-section-large": props.large},
-        {"uk-section-xlarge": props.xlarge}
+        {"uk-section-xlarge": props.xlarge},
+        " "
     )
 };
 

@@ -9,11 +9,12 @@ const Container = (props) =>{
 };
 
 const applyStyles = (props) => {
-    return classNames("uk-container",
+    return classNames(" uk-container",
         {"uk-container-xsmall": props.xsmall},
         {"uk-container-small": props.small},
         {"uk-container-large": props.large},
         {"uk-container-expand": props.expand},
+        " "
     )
 };
 

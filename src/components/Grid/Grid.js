@@ -11,11 +11,13 @@ const Grid = (props) =>{
 };
 
 const applyStyles = (props) => {
-    return classNames(
-        {"uk-grid-small": props.gapSmall},
-        {"uk-grid-medium": props.gapMedium},
-        {"uk-grid-large": props.gapLarge},
-        {"uk-grid-collapse": props.gapCollapse}
+    return classNames(" ",
+        {"uk-grid-small": props.small},
+        {"uk-grid-medium": props.medium},
+        {"uk-grid-large": props.large},
+        {"uk-grid-collapse": props.collapse},
+        {"uk-grid-match": props.match},
+        " "
     )
 };
 
@@ -28,14 +30,16 @@ Grid.propTypes = {
     auto: PropTypes.bool,
     /** Divides the grid into equal units depending on the available space */
     expand: PropTypes.bool,
+    /** Match the height of the direct child of each cell */
+    match: PropTypes.bool,
     /** Add this props to apply a small gap. */
-    gapSmall: PropTypes.bool,
+    small: PropTypes.bool,
     /** Add this props to apply a medium gap like the default one, but without a breakpoint. */
-    gapMedium: PropTypes.bool,
+    medium: PropTypes.bool,
     /** Add this props to apply a large gap with breakpoints. */
-    gapLarge: PropTypes.bool,
+    large: PropTypes.bool,
     /** Add this props to remove the grid gap entirely. */
-    gapCollapse: PropTypes.bool,
+    collapse: PropTypes.bool,
     /** Aligns text to the left. */
     textLeft: PropTypes.bool,
     /** Aligns text to the right. */
@@ -53,10 +57,11 @@ Grid.defaultProps = {
     child: false,
     auto: false,
     expand: false,
-    gapSmall: false,
-    gapMedium: false,
-    gapLarge: false,
-    gapCollapse: false,
+    match: false,
+    small: false,
+    medium: false,
+    large: false,
+    collapse: false,
     children: undefined
 };
 

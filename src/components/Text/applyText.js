@@ -1,20 +1,14 @@
 import PropTypes from 'prop-types';
+import classNames from "classnames";
 
 const applyText = (props) => {
-    let str = "";
-
-    if(props.textLeft){
-        str += "uk-text-left"
-    }else if(props.textRight){
-        str += "uk-text-right"
-    }else if(props.textCenter){
-        str += "uk-text-center"
-    }else if(props.textJustify){
-        str += "uk-text-justify"
-    }
-
-
-    return str;
+    return classNames(" ",
+        {"uk-text-left": props.textLeft},
+        {"uk-text-right": props.textRight},
+        {"uk-text-center": props.textCenter},
+        {"uk-text-justify": props.textJustify},
+        " "
+    );
 };
 
 applyText.propTypes = {

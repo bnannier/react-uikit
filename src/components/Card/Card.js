@@ -11,12 +11,15 @@ const Card = (props) =>{
 };
 
 const applyStyles = (props) => {
-    return classNames("uk-card",
+    return classNames(" uk-card",
         {"uk-card-body": props.body},
         {"uk-card-default": props.default},
         {"uk-card-primary": props.primary},
         {"uk-card-secondary": props.secondary},
         {"uk-card-hover": props.hover},
+        {"uk-card-small": props.small},
+        {"uk-card-large": props.large},
+        " "
     )
 };
 
@@ -31,16 +34,6 @@ Card.propTypes = {
     secondary: PropTypes.bool,
     /** Creates a hover effect on the card */
     hover: PropTypes.bool,
-    /** Affects all device widths, grid columns stay side by side */
-    width: PropTypes.string,
-    /** Affects device widths of 640px and larger. Grid columns will stack on smaller sizes */
-    widthS: PropTypes.string,
-    /** Affects device widths of 960px and larger. Grid columns will stack on smaller sizes */
-    widthM: PropTypes.string,
-    /** Affects device widths of 1200px and larger. Grid columns will stack on smaller sizes */
-    widthL: PropTypes.string,
-    /** Affects device widths of 1600px and larger. Grid columns will stack on smaller sizes */
-    widthXL: PropTypes.string,
     /** Pass children elements to this element */
     children: PropTypes.node,
 };
@@ -51,11 +44,6 @@ Card.defaultProps = {
     primary: false,
     secondary: false,
     hover: false,
-    width: "",
-    widthS: "",
-    widthM: "",
-    widthL: "",
-    widthXL: "",
     children: undefined
 };
 

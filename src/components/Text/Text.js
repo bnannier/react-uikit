@@ -1,17 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import applyText from "./applyText";
 
 const Text = (props) =>{
     return (
-        <div className={applyStyles(props)}>{props.children}</div>
+        <div className={applyStyles(props) + applyText(props)}>{props.children}</div>
     )
 };
 
 const applyStyles = (props) => {
-    return classNames("uk-xxx",
-        {"uk-xxx": props.xxx}
-    )
+    return classNames(" ");
 };
 
 Text.propTypes = {
