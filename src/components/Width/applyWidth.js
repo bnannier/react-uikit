@@ -1,10 +1,17 @@
 import PropTypes from 'prop-types';
 
 const applyWidth = (props) => {
-    let str = " uk-width-";
+    let str = "";
 
     if(props.child){
         str = " uk-child-width-";
+        if(props.auto){
+            str += "auto ";
+        }else if(props.expand){
+            str += "expand ";
+        }
+    }else if (props.width || props.widthSmall || props.widthMedium || props.widthLarge || props.widthXLarge){
+        str = " uk-width-";
     }
 
     // Affects all device widths, grid columns stay side by side.
@@ -13,23 +20,23 @@ const applyWidth = (props) => {
     }
 
     // Affects device widths of 640px and larger. Grid columns will stack on smaller sizes.
-    if (props.widthS) {
-        str += props.widthS + "@s ";
+    if (props.widthSmall) {
+        str += props.widthSmall + "@s ";
     }
 
     // Affects device widths of 960px and larger. Grid columns will stack on smaller sizes.
-    if (props.widthM) {
-        str += props.widthM + "@m ";
+    if (props.widthMedium) {
+        str += props.widthMedium + "@m ";
     }
 
     // Affects device widths of 1200px and larger. Grid columns will stack on smaller sizes.
-    if (props.widthL) {
-        str += props.widthL + "@l ";
+    if (props.widthLarge) {
+        str += props.widthLarge + "@l ";
     }
 
     // Affects device widths of 1600px and larger. Grid columns will stack on smaller sizes.
-    if (props.widthXL) {
-        str += props.widthXL + "@xl ";
+    if (props.widthXLarge) {
+        str += props.widthXLarge + "@xl ";
     }
 
     return str;
@@ -39,21 +46,30 @@ applyWidth.propTypes = {
     /** Affects all device widths, grid columns stay side by side */
     width: PropTypes.string,
     /** Affects device widths of 640px and larger. Grid columns will stack on smaller sizes */
-    widthS: PropTypes.string,
+    widthSmall: PropTypes.string,
     /** Affects device widths of 960px and larger. Grid columns will stack on smaller sizes */
-    widthM: PropTypes.string,
+    widthMedium: PropTypes.string,
     /** Affects device widths of 1200px and larger. Grid columns will stack on smaller sizes */
-    widthL: PropTypes.string,
+    widthLarge: PropTypes.string,
     /** Affects device widths of 1600px and larger. Grid columns will stack on smaller sizes */
-    widthXL: PropTypes.string
+    widthXLarge: PropTypes.string,
+    /** Child elements' are evenly split */
+    child: PropTypes.bool,
+    /** Divides the grid into equal units depending on the content size */
+    auto: PropTypes.bool,
+    /** Divides the grid into equal units depending on the available space */
+    expand: PropTypes.bool
 };
 
 applyWidth.defaultProps = {
     width: "",
-    widthS: "",
-    widthM: "",
-    widthL: "",
-    widthXL: ""
+    widthSmall: "",
+    widthMedium: "",
+    widthLarge: "",
+    widthXLarge: "",
+    child: false,
+    auto: false,
+    expand: false,
 };
 
 export default applyWidth;
