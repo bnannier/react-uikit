@@ -27,8 +27,28 @@ const applyWidth = (props) => {
         {[`uk-width-expand@xl`] : props.widthExpandXLarge},
 
         {[`uk-child-width-${props.childWidth}`] : props.childWidth},
+        {[`uk-child-width-small`] : props.childWidthSmall === true},
+        {[`uk-child-width-${props.childWidthSmall}@s`] : (typeof props.childWidthSmall === "string")},
+        {[`uk-child-width-medium`] : props.childWidthMedium === true},
+        {[`uk-child-width-${props.childWidthMedium}@m`] : (typeof props.childWidthMedium === "string")},
+        {[`uk-child-width-large`] : props.childWidthLarge === true},
+        {[`uk-child-width-${props.childWidthLarge}@l`] : (typeof props.childWidthLarge === "string")},
+        {[`uk-child-width-xlarge`] : props.childWidthXLarge === true},
+        {[`uk-child-width-${props.childWidthXLarge}@xl`] : (typeof props.childWidthXLarge === "string")},
+        {[`uk-child-width-xxlarge`] : props.widthXXLarge === true},
+
         {[`uk-child-width-auto`] : props.childWidthAuto},
+        {[`uk-child-width-auto@s`] : props.childWidthAutoSmall},
+        {[`uk-child-width-auto@m`] : props.childWidthAutoMedium},
+        {[`uk-child-width-auto@l`] : props.childWidthAutoLarge},
+        {[`uk-child-width-auto@xl`] : props.childWidthAutoXLarge},
+
         {[`uk-child-width-expand`] : props.childWidthExpand},
+        {[`uk-child-width-expand@s`] : props.childWidthExpandSmall},
+        {[`uk-child-width-expand@m`] : props.childWidthExpandMedium},
+        {[`uk-child-width-expand@l`] : props.childWidthExpandLarge},
+        {[`uk-child-width-expand@xl`] : props.childWidthExpandXLarge},
+
         " "
     )
 };
@@ -83,8 +103,20 @@ applyWidth.propTypes = {
 
     /** Child elements' are evenly split */
     childWidth: PropTypes.string,
+    /** */
+    childWidthSmall: PropTypes.string,
+    /** */
+    childWidthMedium: PropTypes.string,
+    /** */
+    childWidthLarge: PropTypes.string,
+    /** */
+    childWidthXLarge: PropTypes.string,
+    /** */
+    childWidthXXLarge: PropTypes.string,
+
     /** Divides the grid into equal units depending on the content size */
     childWidthAuto: PropTypes.bool,
+
     /** Divides the grid into equal units depending on the available space */
     childWidthExpand: PropTypes.bool
 };
@@ -110,8 +142,23 @@ applyWidth.defaultProps = {
     widthExpandXLarge: false,
 
     childWidth: "",
+    childWidthSmall: "",
+    childWidthMedium: "",
+    childWidthLarge: "",
+    childWidthXLarge: "",
+    childWidthXXLarge: "",
+
     childWidthAuto: false,
+    childWidthAutoSmall: false,
+    childWidthAutoMedium: false,
+    childWidthAutoLarge: false,
+    childWidthAutoXLarge: false,
+
     childWidthExpand: false,
+    childWidthExpandSmall: false,
+    childWidthExpandMedium: false,
+    childWidthExpandLarge: false,
+    childWidthExpandXLarge: false,
 };
 
 export default applyWidth;

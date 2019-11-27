@@ -3,10 +3,15 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import applyWidth from '../Width/applyWidth'
 import CardTitle from "./CardTitle";
+import applyBackground from "../Background/applyBackground";
 
 const Card = (props) =>{
     return (
-        <div className={applyStyles(props) + applyWidth(props)}>{props.children}</div>
+        <div className={
+            applyStyles(props) +
+            applyWidth(props) +
+            applyBackground(props)
+        }>{props.children}</div>
     )
 };
 

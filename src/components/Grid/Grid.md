@@ -1,40 +1,92 @@
 https://getuikit.com/docs/width
 
-### Define the width of elements for different viewport sizes.
-UIkit's Width component is often used in combination with grids to split content into responsive columns.
-You can apply fractions, automatic width or expand units to fill the remaining space and combine these modes.
+### Create a fully responsive, fluid and nestable grid layout.
+The Grid system of react-uikit allows you to arrange block elements in columns.  
+It works closely together with the <a href='#/Width' target='blank'>Width component</a> to determine how much space of the container each item will take up, 
+and it can also be combined with the <a href='#/Flex' target='blank'>Flex component</a> to align and order grid items.
 
 ### Usage
-Add one of the width* (width, widthS, widthM, widthL, widthXL) props to an element to determine its size.
-Typically, you would use a grid from the Grid component and its child elements to create the units.
+To create the grid container, use the Grid component.
+Add child <a href='#/Width' target='blank'>Width component</a> to create the cells.  
+By default, all grid cells are stacked.
+To place them side by side, add one of the props from the <a href='#/Width' target='blank'>Width component</a>.  
+Using .uk-child-width-expand will automatically apply equal width to items, regardless of how many there are.
 
-### Style modifiers
-xxx
+Often cards from the <a href='#/Card' target='blank'>Card component</a> are used inside a grid. This also goes for the following examples for visualization.
 
 ```jsx
-import Card from '../Card';
+import { Card, Width } from '../';
 <React.Fragment>
-    <Grid>
-        <Card>item</Card>
-        <Card>item</Card>
-        <Card>item</Card>
+    <Grid childWidthExpandSmall textCenter>
+        <Width>
+            <Card default body>item</Card>
+        </Width>
+        <Width>
+            <Card default body>item</Card>
+        </Width>
+        <Width>
+            <Card default body>item</Card>
+        </Width>
     </Grid>
 </React.Fragment>
 ```
-xxx
 
-### Size modifiers
-xxx
+### Gap modifiers
+The Grid component comes with a default gap that is decreased automatically from a certain breakpoint usually on a smaller desktop viewport width.
+To apply a different gap, add one of the following props.
+
+| PROPS  | DESCRIPTION |
+| ----- | ----------- |
+| <span style="color:salmon">small</span> | Add this class to apply a small gap. |
+| <span style="color:salmon">medium</span> | Add this class to apply a medium gap like the default one, but without a breakpoint. |
+| <span style="color:salmon">large</span> | Add this class to apply a large gap with breakpoints. |
+| <span style="color:salmon">collapse</span> | Add this class to remove the grid gap entirely. |
 
 ```jsx
-import Width from '../Width';
+import { Card, Width } from '../';
 <React.Fragment>
-    <Grid>
-        <Width auto>
-            <div class="uk-width-auto uk-card uk-card-default uk-card-body">Auto</div>
+    <Grid small childWidthExpandSmall textCenter>
+        <Width>
+            <Card default body>item</Card>
         </Width>
-        <Width expand>
-            <div class="uk-width-expand uk-card uk-card-default uk-card-body">Expand</div>
+        <Width>
+            <Card default body>item</Card>
+        </Width>
+        <Width>
+            <Card default body>item</Card>
+        </Width>
+    </Grid>
+    <Grid medium childWidthExpandSmall textCenter>
+        <Width>
+            <Card default body>item</Card>
+        </Width>
+        <Width>
+            <Card default body>item</Card>
+        </Width>
+        <Width>
+            <Card default body>item</Card>
+        </Width>
+    </Grid>
+    <Grid large childWidthExpandSmall textCenter>
+        <Width>
+            <Card default body>item</Card>
+        </Width>
+        <Width>
+            <Card default body>item</Card>
+        </Width>
+        <Width>
+            <Card default body>item</Card>
+        </Width>
+    </Grid>
+    <Grid collapse childWidthExpandSmall textCenter marginLargeTop>
+        <Width>
+            <Card backgroundMuted body>item</Card>
+        </Width>
+        <Width>
+            <Card backgroundPrimary body>item</Card>
+        </Width>
+        <Width>
+            <Card backgroundSecondary body>item</Card>
         </Width>
     </Grid>
 </React.Fragment>
