@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import applyWidth from '../Width/applyWidth'
-import applyText from '../Text/applyText';
-import applyMargin from "../Margin/applyMargin";
+import applyWidth from '../Common/applyWidth'
+import applyText from '../Common/applyText';
+import applyMargin from "../Common/applyMargin";
 
 const Grid = (props) =>{
     return (

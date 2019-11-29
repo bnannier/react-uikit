@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import applyText from "./applyText";
+import applyText from "../Common/applyText";
 
 const Text = (props) =>{
     return (
@@ -14,14 +14,11 @@ const applyStyles = (props) => {
 };
 
 Text.propTypes = {
-    /** xxx */
-    xxx: PropTypes.bool,
     /** Pass children elements to this element */
     children: PropTypes.node,
 };
 
 Text.defaultProps = {
-    xxx: false,
     children: undefined
 };
 

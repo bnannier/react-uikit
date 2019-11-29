@@ -15,18 +15,18 @@ Using .uk-child-width-expand will automatically apply equal width to items, rega
 Often cards from the <a href='#/Card' target='blank'>Card component</a> are used inside a grid. This also goes for the following examples for visualization.
 
 ```jsx
-import { Card, Width } from '../';
+import { Card, Panel } from '../';
 <React.Fragment>
     <Grid childWidthExpandSmall textCenter>
-        <Width>
+        <Panel>
             <Card default body>item</Card>
-        </Width>
-        <Width>
+        </Panel>
+        <Panel>
             <Card default body>item</Card>
-        </Width>
-        <Width>
+        </Panel>
+        <Panel>
             <Card default body>item</Card>
-        </Width>
+        </Panel>
     </Grid>
 </React.Fragment>
 ```
@@ -43,51 +43,51 @@ To apply a different gap, add one of the following props.
 | <span style="color:salmon">collapse</span> | Add this class to remove the grid gap entirely. |
 
 ```jsx
-import { Card, Width } from '../';
+import { Card, Panel } from '../';
 <React.Fragment>
     <Grid small childWidthExpandSmall textCenter>
-        <Width>
+        <Panel>
             <Card default body>item</Card>
-        </Width>
-        <Width>
+        </Panel>
+        <Panel>
             <Card default body>item</Card>
-        </Width>
-        <Width>
+        </Panel>
+        <Panel>
             <Card default body>item</Card>
-        </Width>
+        </Panel>
     </Grid>
     <Grid medium childWidthExpandSmall textCenter>
-        <Width>
+        <Panel>
             <Card default body>item</Card>
-        </Width>
-        <Width>
+        </Panel>
+        <Panel>
             <Card default body>item</Card>
-        </Width>
-        <Width>
+        </Panel>
+        <Panel>
             <Card default body>item</Card>
-        </Width>
+        </Panel>
     </Grid>
     <Grid large childWidthExpandSmall textCenter>
-        <Width>
+        <Panel>
             <Card default body>item</Card>
-        </Width>
-        <Width>
+        </Panel>
+        <Panel>
             <Card default body>item</Card>
-        </Width>
-        <Width>
+        </Panel>
+        <Panel>
             <Card default body>item</Card>
-        </Width>
+        </Panel>
     </Grid>
     <Grid collapse childWidthExpandSmall textCenter marginLargeTop>
-        <Width>
+        <Panel>
             <Card backgroundMuted body>item</Card>
-        </Width>
-        <Width>
+        </Panel>
+        <Panel>
             <Card backgroundPrimary body>item</Card>
-        </Width>
-        <Width>
+        </Panel>
+        <Panel>
             <Card backgroundSecondary body>item</Card>
-        </Width>
+        </Panel>
     </Grid>
 </React.Fragment>
 ```

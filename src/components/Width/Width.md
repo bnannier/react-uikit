@@ -34,35 +34,35 @@ This is great to adjust your layout and content for different device sizes.
 | <span style="color:salmon">widthXLarge</span> | Affects device widths of <span style="color:salmon">1600px</span> and larger. Grid columns will stack on smaller sizes. |
 
 ```jsx
-import { Card, Grid, Width } from '../';
+import { Card, Grid, Panel } from '../';
 
 <React.Fragment>
     <Grid textCenter>
-        <Width width="1-3" widthSmall="1-2" widthMedium="1-3" widthLarge="1-2" widthXLarge="1-3">
+        <Panel width="1-3">
             <Card default body>item</Card>
-        </Width>
-        <Width width="1-3" widthSmall="1-2" widthMedium="1-3" widthLarge="1-2" widthXLarge="1-3">
+        </Panel>
+        <Panel width="1-3">
             <Card default body>item</Card>
-        </Width>
-        <Width width="1-3" widthSmall="1-2" widthMedium="1-3" widthLarge="1-2" widthXLarge="1-3">
+        </Panel>
+        <Panel width="1-3">
             <Card default body>item</Card>
-        </Width>
+        </Panel>
     </Grid>
     <Grid textCenter>
-        <Width width="1-2">
+        <Panel width="1-2">
             <Card default body>item</Card>
-        </Width>
-        <Width width="1-2">
+        </Panel>
+        <Panel width="1-2">
             <Card default body>item</Card>
-        </Width>
+        </Panel>
     </Grid>
     <Grid textCenter>
-        <Width width="1-4">
+        <Panel width="1-4">
             <Card default body>item</Card>
-        </Width>
-        <Width width="3-4">
+        </Panel>
+        <Panel width="3-4">
             <Card default body>item</Card>
-        </Width>
+        </Panel>
     </Grid>
 </React.Fragment>
 ```
@@ -76,15 +76,15 @@ The Width component provides additional modifiers to give you more flexibility i
 | <span style="color:salmon">expand</span> | The item expands to fill up the remaining space of the grid container. |
 
 ```jsx
-import { Card, Grid, Width } from '../';
+import { Card, Grid, Panel } from '../';
 <React.Fragment>
     <Grid textCenter>
-        <Width widthAuto>
+        <Panel widthAuto>
             <Card default body>auto</Card>
-        </Width>
-        <Width widthExpand>
+        </Panel>
+        <Panel widthExpand>
             <Card default body>expand</Card>
-        </Width>
+        </Panel>
     </Grid>
 </React.Fragment>
 ```
@@ -110,24 +110,24 @@ Just add the width and child props to the grid itself.
 | <span style="color:salmon">expand</span> | Divides the grid into equal units depending on the available space. |
 
 ```jsx
-import { Card, Grid, Width } from '../';
+import { Card, Grid, Panel } from '../';
 <React.Fragment>
     <Grid childWidth="1-4" small textCenter>
-        <Width>
+        <Panel>
             <Card default body>Item</Card>
-        </Width>
-        <Width>
+        </Panel>
+        <Panel>
             <Card default body>Item</Card>
-        </Width>
-        <Width>
+        </Panel>
+        <Panel>
             <Card default body>Item</Card>
-        </Width>
-        <Width>
+        </Panel>
+        <Panel>
             <Card default body>Item</Card>
-        </Width>
-        <Width>
+        </Panel>
+        <Panel>
             <Card default body>Item</Card>
-        </Width>
+        </Panel>
     </Grid>
 </React.Fragment>
 ```
@@ -136,24 +136,24 @@ Items that use width props with fractions will break into a new row, if they no 
 When using one of the expand props, however, the space will be evenly distributed among items that always stay in the same row.
 
 ```jsx
-import { Card, Grid, Width } from '../';
+import { Card, Grid, Panel } from '../';
 <React.Fragment>
     <Grid childWidthExpand small textCenter>
-        <Width>
+        <Panel>
             <Card default body>Item</Card>
-        </Width>
-        <Width>
+        </Panel>
+        <Panel>
             <Card default body>Item</Card>
-        </Width>
-        <Width>
+        </Panel>
+        <Panel>
             <Card default body>Item</Card>
-        </Width>
-        <Width>
+        </Panel>
+        <Panel>
             <Card default body>Item</Card>
-        </Width>
-        <Width>
+        </Panel>
+        <Panel>
             <Card default body>Item</Card>
-        </Width>
+        </Panel>
     </Grid>
 </React.Fragment>
 ```
@@ -170,23 +170,23 @@ In addition to the calculated width props, you can also add one of the following
 | <span style="color:salmon">widthXXLarge</span> | Applies a fixed width of <span style="color:salmon">750px</span>. |
 
 ```jsx
-import { Card, Grid, Width } from '../';
+import { Card, Grid, Panel } from '../';
 <React.Fragment>
-    <Width widthSmall margin>
+    <Panel widthSmall margin>
         <Card default body small>widthSmall</Card>
-    </Width>
-    <Width widthMedium margin>
+    </Panel>
+    <Panel widthMedium margin>
         <Card default body small>widthMedium</Card>
-    </Width>
-    <Width widthLarge margin>
+    </Panel>
+    <Panel widthLarge margin>
         <Card default body small>widthLarge</Card>
-    </Width>
-    <Width widthXLarge margin>
+    </Panel>
+    <Panel widthXLarge margin>
         <Card default body small>widthXLarge</Card>
-    </Width>
-    <Width widthXXLarge margin>
+    </Panel>
+    <Panel widthXXLarge>
         <Card default body small>widthXXLarge</Card>
-    </Width>
+    </Panel>
 </React.Fragment>
 ```
 
@@ -195,21 +195,21 @@ You can also combine the child and expand or auto on the Grid and the width="1-3
 That way it is possible, for example, to create a grid with one item that has a specific width and all other items expanding to fill the remaining space.
 
 ```jsx
-import { Card, Grid, Width } from '../';
+import { Card, Grid, Panel } from '../';
 <React.Fragment>
     <Grid childWidthExpand small textCenter>
-        <Width>
+        <Panel>
             <Card default body>Expand</Card>
-        </Width>
-        <Width width="1-3">
+        </Panel>
+        <Panel width="1-3">
             <Card default body>width="1-3"</Card>
-        </Width>
-        <Width>
+        </Panel>
+        <Panel>
             <Card default body>Expand</Card>
-        </Width>
-        <Width>
+        </Panel>
+        <Panel>
             <Card default body>Expand</Card>
-        </Width>
+        </Panel>
     </Grid>
 </React.Fragment>
 ```
@@ -221,39 +221,39 @@ These props can be combined with the Visibility component.
 This is great to adjust your layout and content for different device sizes.
 
 ```jsx
-import { Card, Grid, Width } from '../';
+import { Card, Grid, Panel } from '../';
 <React.Fragment>
     <Grid match small textCenter>
-        <Width widthMedium="1-2">
+        <Panel widthMedium="1-2">
             <Card default body>widthMedium="1-2"</Card>
-        </Width>
-        <Width widthMedium="1-4">
+        </Panel>
+        <Panel widthMedium="1-4">
             <Card default body>widthMedium="1-4"</Card>
-        </Width>
-        <Width widthMedium="1-4">
+        </Panel>
+        <Panel widthMedium="1-4">
             <Card default body>widthMedium="1-4"</Card>
-        </Width>
-        <Width widthMedium="1-5" hiddenLarge>
+        </Panel>
+        <Panel widthMedium="1-5" hiddenLarge>
             <Card default body>widthMedium="1-5"<br />hiddenLarge</Card>
-        </Width>
-        <Width widthMedium="1-5" widthLarge="1-3">
+        </Panel>
+        <Panel widthMedium="1-5" widthLarge="1-3">
             <Card secondary body>widthMedium="1-5"<br />widthLarge="1-3"</Card>
-        </Width>
-        <Width widthMedium="3-5" widthLarge="2-3">
+        </Panel>
+        <Panel widthMedium="3-5" widthLarge="2-3">
             <Card default body>widthMedium="3-5"<br />widthLarge="2-3"</Card>
-        </Width>
+        </Panel>
     </Grid>
 
     <Grid match small textCenter>
-        <Width widthAutoMedium visibleLarge>
+        <Panel widthAutoMedium visibleLarge>
             <Card primary body>widthAutoMedium<br />visibleLarge</Card>
-        </Width>
-        <Width widthMedium="1-3">
+        </Panel>
+        <Panel widthMedium="1-3">
             <Card default body>widthMedium="1-3"</Card>
-        </Width>
-        <Width widthExpandMedium>
+        </Panel>
+        <Panel widthExpandMedium>
             <Card default body>widthExpandMedium</Card>
-        </Width>
+        </Panel>
     </Grid>
 </React.Fragment>
 ```

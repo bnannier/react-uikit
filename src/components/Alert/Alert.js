@@ -1,29 +1,27 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import PropTypes from "prop-types";
 
-const Sample = (props) =>{
+const Alert = (props) =>{
     return (
         <div className={applyStyles(props)}>{props.children}</div>
     )
 };
 
 const applyStyles = (props) => {
-    return classNames("uk-xxx",
-        {"uk-xxx": props.xxx}
+    return classNames("uk-alert",
+        {"uk-alert": props.xxx},
+        " "
     )
 };
 
-Sample.propTypes = {
-    /** Xxxx */
-    xxx: PropTypes.bool,
+Alert.propTypes = {
     /** Pass children elements to this element */
     children: PropTypes.node,
 };
 
-Sample.defaultProps = {
-    xxx: false,
+Alert.defaultProps = {
     children: undefined
 };
 
-export default Sample;
+export default Alert;

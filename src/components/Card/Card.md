@@ -6,7 +6,7 @@ Typically, cards are arranged in grid columns from the Grid component.
 
 | PROP  | DESCRIPTION |
 | ----- | ----------- |
-| body  | Add this prop to a <Card> element to define the Card component. |
+| body  | Add this prop to a Card component to define the Card component. |
 
 ```jsx
 <React.Fragment>

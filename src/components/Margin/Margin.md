@@ -34,35 +34,35 @@ This is great to adjust your layout and content for different device sizes.
 | <span style="color:salmon">widthXLarge</span> | Affects device widths of <span style="color:salmon">1600px</span> and larger. Grid columns will stack on smaller sizes. |
 
 ```jsx
-import { Card, Grid, Width } from '../';
+import { Card, Grid, Panel } from '../';
 
 <React.Fragment>
     <Grid>
-        <Width width="1-3">
+        <Panel width="1-3">
             <Card default body>item</Card>
-        </Width>
-        <Width width="1-3">
+        </Panel>
+        <Panel width="1-3">
             <Card default body>item</Card>
-        </Width>
-        <Width width="1-3">
+        </Panel>
+        <Panel width="1-3">
             <Card default body>item</Card>
-        </Width>
+        </Panel>
     </Grid>
     <Grid>
-        <Width width="1-2">
+        <Panel width="1-2">
             <Card default body>item</Card>
-        </Width>
-        <Width width="1-2">
+        </Panel>
+        <Panel width="1-2">
             <Card default body>item</Card>
-        </Width>
+        </Panel>
     </Grid>
     <Grid>
-        <Width width="1-4">
+        <Panel width="1-4">
             <Card default body>item</Card>
-        </Width>
-        <Width width="3-4">
+        </Panel>
+        <Panel width="3-4">
             <Card default body>item</Card>
-        </Width>
+        </Panel>
     </Grid>
 </React.Fragment>
 ```

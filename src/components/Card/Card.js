@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import applyWidth from '../Width/applyWidth'
+import applyWidth from '../Common/applyWidth'
 import CardTitle from "./CardTitle";
-import applyBackground from "../Background/applyBackground";
+import applyBackground from "../Common/applyBackground";
 
 const Card = (props) =>{
     return (

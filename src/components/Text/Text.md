@@ -7,7 +7,7 @@ React-uikit offers various text utilities to style your text.
 
 ```jsx
 <React.Fragment>
-    <Grid primary>Default size modifier</Grid>
+
 </React.Fragment>
 ```
 xxx
@@ -17,6 +17,6 @@ xxx
 
 ```jsx
 <React.Fragment>
-    <Grid primary>Default size modifier</Grid>
+
 </React.Fragment>
 ```
