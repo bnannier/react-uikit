@@ -33,12 +33,38 @@ const applyMargin = (props) => {
         {"uk-margin-xlarge-left": props.marginXLargeLeft},
         {"uk-margin-xlarge-right": props.marginXLargeRight},
 
+        {"uk-margin-remove": props.marginRemove},
+        {"uk-margin-remove-top": props.marginRemoveTop},
+        {"uk-margin-remove-bottom": props.marginRemoveBottom},
+        {"uk-margin-remove-left": props.marginRemoveLeft},
+        {"uk-margin-remove-right": props.marginRemoveRight},
+        {"uk-margin-remove-vertical": props.marginRemoveVertical},
+        {"uk-margin-remove-adjacent": props.marginRemoveAdjacent},
+        {"uk-margin-remove-first-child": props.marginRemoveFirstChild},
+        {"uk-margin-remove-last-child": props.marginRemoveLastChild},
+
+        {"uk-margin-remove-left@s": props.marginRemoveSmallLeft},
+        {"uk-margin-remove-right@s": props.marginRemoveSmallRight},
+        {"uk-margin-remove-left@m": props.marginRemoveMediumLeft},
+        {"uk-margin-remove-right@m": props.marginRemoveMediumRight},
+        {"uk-margin-remove-left@l": props.marginRemoveLargeLeft},
+        {"uk-margin-remove-right@l": props.marginRemoveLargeRight},
+        {"uk-margin-remove-left@xl": props.marginRemoveXLargeLeft},
+        {"uk-margin-remove-right@xl": props.marginRemoveXLargeRight},
+
+        {"uk-margin-auto": props.marginAuto},
+        {"uk-margin-auto-top": props.marginAutoTop},
+        {"uk-margin-auto-bottom": props.marginAutoBottom},
+        {"uk-margin-auto-left": props.marginAutoLeft},
+        {"uk-margin-auto-right": props.marginAutoRight},
+        {"uk-margin-auto-vertical": props.marginAutoVertical},
+
         " "
     );
 };
 
 applyMargin.propTypes = {
-    margin:  PropTypes.bool,
+    margin: PropTypes.bool,
     marginTop: PropTypes.bool,
     marginBottom: PropTypes.bool,
     marginLeft: PropTypes.bool,
@@ -66,7 +92,35 @@ applyMargin.propTypes = {
     marginXLargeTop: PropTypes.bool,
     marginXLargeBottom: PropTypes.bool,
     marginXLargeLeft: PropTypes.bool,
-    marginXLargeRight: PropTypes.bool
+    marginXLargeRight: PropTypes.bool,
+
+    marginRemove: PropTypes.bool,
+    marginRemoveTop: PropTypes.bool,
+    marginRemoveBottom: PropTypes.bool,
+    marginRemoveLeft: PropTypes.bool,
+    marginRemoveRight: PropTypes.bool,
+    marginRemoveVertical: PropTypes.bool,
+    marginRemoveAdjacent: PropTypes.bool,
+    marginRemoveFirstChild: PropTypes.bool,
+    marginRemoveLastChild: PropTypes.bool,
+
+    marginRemoveSmallLeft: PropTypes.bool,
+    marginRemoveSmallRight: PropTypes.bool,
+    marginRemoveMediumLeft: PropTypes.bool,
+    marginRemoveMediumRight: PropTypes.bool,
+    marginRemoveLargeLeft: PropTypes.bool,
+    marginRemoveLargeRight: PropTypes.bool,
+    marginRemoveXLargeLeft: PropTypes.bool,
+    marginRemoveXLargeRight: PropTypes.bool,
+
+    marginAuto: PropTypes.bool,
+    marginAutoTop: PropTypes.bool,
+    marginAutoBottom: PropTypes.bool,
+    marginAutoLeft: PropTypes.bool,
+    marginAutoRight: PropTypes.bool,
+    marginAutoVertical: PropTypes.bool,
+
+
 };
 
 applyMargin.defaultProps = {
@@ -100,23 +154,31 @@ applyMargin.defaultProps = {
     marginXLargeLeft: false,
     marginXLargeRight: false,
 
-
-
-
     marginRemove: false,
     marginRemoveTop: false,
     marginRemoveBottom: false,
     marginRemoveLeft: false,
     marginRemoveRight: false,
-
     marginRemoveVertical: false,
     marginRemoveAdjacent: false,
     marginRemoveFirstChild: false,
     marginRemoveLastChild: false,
 
+    marginRemoveSmallLeft: false,
+    marginRemoveSmallRight: false,
+    marginRemoveMediumLeft: false,
+    marginRemoveMediumRight: false,
+    marginRemoveLargeLeft: false,
+    marginRemoveLargeRight: false,
+    marginRemoveXLargeLeft: false,
+    marginRemoveXLargeRight: false,
 
-
-
+    marginAuto: false,
+    marginAutoTop: false,
+    marginAutoBottom: false,
+    marginAutoLeft: false,
+    marginAutoRight: false,
+    marginAutoVertical: false,
 
 
 

@@ -10,12 +10,13 @@ const applyPanel = (props) => {
 };
 
 applyPanel.propTypes = {
-    /** Add the .uk-panel class to a <div> element to create a position context, set box-sizing to border-box, apply a clearfix and to remove the bottom margin of its last child element. */
     panel: PropTypes.bool,
+    scrollable: PropTypes.bool
 };
 
 applyPanel.defaultProps = {
     panel: false,
+    scrollable: false
 };
 
 export default applyPanel;

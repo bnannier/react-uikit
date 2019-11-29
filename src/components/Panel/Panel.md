@@ -1,7 +1,7 @@
 ### Usage
 React-uikit uses panels to outline certain sections of your content. These can be arranged in grid columns from the Grid component component, for example.
 
-#### Panel
+### Panel
 
 | PROPS  | DESCRIPTION |
 | ----- | ----------- |
@@ -21,7 +21,7 @@ import { Card, Grid, Panel } from '../';
 
 <br /><br /><hr />
 
-#### Scrollable Panel
+### Scrollable Panel
 
 | PROPS  | DESCRIPTION |
 | ----- | ----------- |

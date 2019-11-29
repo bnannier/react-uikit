@@ -4,13 +4,15 @@ import classNames from 'classnames';
 import applyWidth from '../Common/applyWidth'
 import CardTitle from "./CardTitle";
 import applyBackground from "../Common/applyBackground";
+import applyMargin from "../Common/applyMargin";
 
 const Card = (props) =>{
     return (
         <div className={
             applyStyles(props) +
             applyWidth(props) +
-            applyBackground(props)
+            applyBackground(props) +
+            applyMargin(props)
         }>{props.children}</div>
     )
 };
