@@ -19,6 +19,8 @@ import { Card, Grid, Panel } from '../';
 </React.Fragment>
 ```
 
+<br /><br /><hr />
+
 #### Scrollable Panel
 
 | VALUE  | DESCRIPTION |
@@ -29,7 +31,7 @@ import { Card, Grid, Panel } from '../';
 import { Card, Grid, Panel } from '../';
 
 <React.Fragment>
-    <Panel panel scrollable>
+    <Panel panel scrollable>s
     </Panel>
 </React.Fragment>
 ```
