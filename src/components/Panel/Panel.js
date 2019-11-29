@@ -6,7 +6,6 @@ import applyWidth from "../Common/applyWidth";
 import applyMargin from "../Common/applyMargin";
 import applyVisibility from "../Common/applyVisibility";
 
-
 const Panel = (props) =>{
     return (
         <div className={

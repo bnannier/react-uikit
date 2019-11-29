@@ -1,10 +1,8 @@
 import React from 'react';
-import applyMargin from "../Common/applyMargin";
 
+/** This class is here just to generate the styleguide docs */
 const Margin = (props) =>{
-    return (
-        <div className={applyMargin(props)}>{props.children}</div>
-    )
+    return (<div></div>)
 };
 
 export default Margin;

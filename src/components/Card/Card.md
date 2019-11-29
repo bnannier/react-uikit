@@ -6,7 +6,7 @@ Typically, cards are arranged in grid columns from the Grid component.
 
 | PROP  | DESCRIPTION |
 | ----- | ----------- |
-| body  | Add this prop to a Card component to define the Card component. |
+| <span style="color:salmon">body</span>  | Add this prop to a Card component to define the Card component. |
 
 ```jsx
 <React.Fragment>
@@ -22,9 +22,9 @@ UIkit includes a number of modifiers that can be used to add a specific style to
 
 | PROP  | DESCRIPTION |
 | ----- | ----------- |
-| default  | Add this prop to create a visually styled box. |
-| primary  | Add this prop to modify the card and emphasize it with a primary color. |
-| secondary  | Add this prop to modify the card and give it a secondary background color. |
+| <span style="color:salmon">default</span>  | Add this prop to create a visually styled box. |
+| <span style="color:salmon">primary</span>  | Add this prop to modify the card and emphasize it with a primary color. |
+| <span style="color:salmon">secondary</span>  | Add this prop to modify the card and give it a secondary background color. |
 
 ```jsx
 <React.Fragment>

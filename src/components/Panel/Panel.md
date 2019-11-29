@@ -3,9 +3,9 @@ React-uikit uses panels to outline certain sections of your content. These can b
 
 #### Panel
 
-| VALUE  | DESCRIPTION |
+| PROPS  | DESCRIPTION |
 | ----- | ----------- |
-| <span style="color:darkturquoise">panel</span> | Add the pnael props to a <Panel> component to create a position context, set box-sizing to border-box, apply a clearfix and to remove the bottom margin of its last child element. |
+| <span style="color:salmon">panel</span> | Add the pnael props to a <Panel> component to create a position context, set box-sizing to border-box, apply a clearfix and to remove the bottom margin of its last child element. |
 
 ```jsx
 import { Card, Grid, Panel } from '../';
@@ -23,9 +23,9 @@ import { Card, Grid, Panel } from '../';
 
 #### Scrollable Panel
 
-| VALUE  | DESCRIPTION |
+| PROPS  | DESCRIPTION |
 | ----- | ----------- |
-| <span style="color:darkturquoise">scrollable</span> | Add the scrollable props to give the panel a fixed height and make it scrollable, if its content exceeds the height. You can also add one of the .uk-height-* classes to apply a different height. |
+| <span style="color:salmon">scrollable</span> | Add the scrollable props to give the panel a fixed height and make it scrollable, if its content exceeds the height. You can also add one of the .uk-height-* classes to apply a different height. |
 
 ```jsx
 import { Card, Grid, Panel } from '../';

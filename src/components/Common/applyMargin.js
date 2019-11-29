@@ -98,7 +98,28 @@ applyMargin.defaultProps = {
     marginXLargeTop: false,
     marginXLargeBottom: false,
     marginXLargeLeft: false,
-    marginXLargeRight: false
+    marginXLargeRight: false,
+
+
+
+
+    marginRemove: false,
+    marginRemoveTop: false,
+    marginRemoveBottom: false,
+    marginRemoveLeft: false,
+    marginRemoveRight: false,
+
+    marginRemoveVertical: false,
+    marginRemoveAdjacent: false,
+    marginRemoveFirstChild: false,
+    marginRemoveLastChild: false,
+
+
+
+
+
+
+
 };
 
 export default applyMargin;

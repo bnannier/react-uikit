@@ -1,12 +1,8 @@
 import React from 'react';
-import applyWidth from "../Common/applyWidth";
-import applyMargin from "../Common/applyMargin";
-import applyVisibility from "../Common/applyVisibility";
 
+/** This class is here just to generate the styleguide docs */
 const Visibility = (props) =>{
-    return (
-        <div className={applyWidth(props) + applyMargin(props) + applyVisibility(props)}>{props.children}</div>
-    )
+    return (<div></div>)
 };
 
 export default Visibility;
