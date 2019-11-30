@@ -59,6 +59,34 @@ const applyMargin = (props) => {
         {"uk-margin-auto-right": props.marginAutoRight},
         {"uk-margin-auto-vertical": props.marginAutoVertical},
 
+        {"uk-margin-auto@s": props.marginAutoSmall},
+        {"uk-margin-auto-top@s": props.marginAutoTopSmall},
+        {"uk-margin-auto-bottom@s": props.marginAutoBottomSmall},
+        {"uk-margin-auto-left@s": props.marginAutoLeftSmall},
+        {"uk-margin-auto-right@s": props.marginAutoRightSmall},
+        {"uk-margin-auto-vertical@s": props.marginAutoVerticalSmall},
+
+        {"uk-margin-auto@m": props.marginAutoMedium},
+        {"uk-margin-auto-top@m": props.marginAutoTopMedium},
+        {"uk-margin-auto-bottom@m": props.marginAutoBottomMedium},
+        {"uk-margin-auto-left@m": props.marginAutoLeftMedium},
+        {"uk-margin-auto-right@m": props.marginAutoRightMedium},
+        {"uk-margin-auto-vertical@m": props.marginAutoVerticalMedium},
+
+        {"uk-margin-auto@l": props.marginAutoLarge},
+        {"uk-margin-auto-top@l": props.marginAutoTopLarge},
+        {"uk-margin-auto-bottom@l": props.marginAutoBottomLarge},
+        {"uk-margin-auto-left@l": props.marginAutoLeftLarge},
+        {"uk-margin-auto-right@l": props.marginAutoRightLarge},
+        {"uk-margin-auto-vertical@l": props.marginAutoVerticalLarge},
+
+        {"uk-margin-auto@xl": props.marginAutoXLarge},
+        {"uk-margin-auto-top@xl": props.marginAutoTopXLarge},
+        {"uk-margin-auto-bottom@xl": props.marginAutoBottomXLarge},
+        {"uk-margin-auto-left@xl": props.marginAutoLeftXLarge},
+        {"uk-margin-auto-right@xl": props.marginAutoRightXLarge},
+        {"uk-margin-auto-vertical@xl": props.marginAutoVerticalXLarge},
+
         " "
     );
 };
@@ -120,7 +148,33 @@ applyMargin.propTypes = {
     marginAutoRight: PropTypes.bool,
     marginAutoVertical: PropTypes.bool,
 
+    marginAutoSmall: PropTypes.bool,
+    marginAutoTopSmall: PropTypes.bool,
+    marginAutoBottomSmall: PropTypes.bool,
+    marginAutoLeftSmall: PropTypes.bool,
+    marginAutoRightSmall: PropTypes.bool,
+    marginAutoVerticalSmall: PropTypes.bool,
 
+    marginAutoMedium: PropTypes.bool,
+    marginAutoTopMedium: PropTypes.bool,
+    marginAutoBottomMedium: PropTypes.bool,
+    marginAutoLeftMedium: PropTypes.bool,
+    marginAutoRightMedium: PropTypes.bool,
+    marginAutoVerticalMedium: PropTypes.bool,
+
+    marginAutoLarge: PropTypes.bool,
+    marginAutoTopLarge: PropTypes.bool,
+    marginAutoBottomLarge: PropTypes.bool,
+    marginAutoLeftLarge: PropTypes.bool,
+    marginAutoRightLarge: PropTypes.bool,
+    marginAutoVerticalLarge: PropTypes.bool,
+
+    marginAutoXLarge: PropTypes.bool,
+    marginAutoTopXLarge: PropTypes.bool,
+    marginAutoBottomXLarge: PropTypes.bool,
+    marginAutoLeftXLarge: PropTypes.bool,
+    marginAutoRightXLarge: PropTypes.bool,
+    marginAutoVerticalXLarge: PropTypes.bool,
 };
 
 applyMargin.defaultProps = {
@@ -180,8 +234,33 @@ applyMargin.defaultProps = {
     marginAutoRight: false,
     marginAutoVertical: false,
 
+    marginAutoSmall: false,
+    marginAutoTopSmall: false,
+    marginAutoBottomSmall: false,
+    marginAutoLeftSmall: false,
+    marginAutoRightSmall: false,
+    marginAutoVerticalSmall: false,
 
+    marginAutoMedium: false,
+    marginAutoTopMedium: false,
+    marginAutoBottomMedium: false,
+    marginAutoLeftMedium: false,
+    marginAutoRightMedium: false,
+    marginAutoVerticalMedium: false,
 
+    marginAutoLarge: false,
+    marginAutoTopLarge: false,
+    marginAutoBottomLarge: false,
+    marginAutoLeftLarge: false,
+    marginAutoRightLarge: false,
+    marginAutoVerticalLarge: false,
+
+    marginAutoXLarge: false,
+    marginAutoTopXLarge: false,
+    marginAutoBottomXLarge: false,
+    marginAutoLeftXLarge: false,
+    marginAutoRightXLarge: false,
+    marginAutoVerticalXLarge: false,
 };
 
 export default applyMargin;

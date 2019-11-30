@@ -7,6 +7,7 @@ import applyBackground from "../Common/applyBackground";
 import applyMargin from "../Common/applyMargin";
 import applyHeight from "../Common/applyHeight";
 import applyFlex from "../Common/applyFlex";
+import applyText from "../Common/applyText";
 
 const Card = (props) =>{
     return (
@@ -16,7 +17,8 @@ const Card = (props) =>{
             applyBackground(props) +
             applyMargin(props) +
             applyHeight(props) +
-            applyFlex(props)
+            applyFlex(props) +
+            applyText(props)
         }>{props.children}</div>
     )
 };

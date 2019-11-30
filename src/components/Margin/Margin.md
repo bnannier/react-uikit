@@ -158,8 +158,8 @@ import { Card, Panel } from '../';
 <React.Fragment>
     <Card margin marginAutoLeft widthSmall="1-2" default body textCenter>Block element</Card>
     
-    <Panel flex>
-    
+    <Panel flex heightMedium backgroundMuted margin textCenter>
+        <Card marginAuto marginAutoVertical widthSmall="1-2" default body>Flex item</Card>
     </Panel>
 
 </React.Fragment>
@@ -182,8 +182,8 @@ Basically, they work just like the usual margin auto classes, except that they h
 import { Card, Panel } from '../';
 
 <React.Fragment>
-    <Card margin marginAutoRight marginAutoMedium      widthSmall="1-2" default body textCenter>Block element</Card>
-    <Card margin marginAuto      marginAutoLeftMedium  widthSmall="1-2" default body textCenter>Block element</Card>
-    <Card margin marginAutoLeft  marginAutoRightMedium widthSmall="1-2" default body textCenter>Block element</Card>
+    <Card margin marginAutoRight marginAutoMedium widthSmall="1-2" default body textCenter>Block element</Card>
+    <Card margin marginAuto marginAutoLeftMedium widthSmall="1-2" default body textCenter>Block element</Card>
+    <Card margin marginAutoLeft marginAutoRightMedium widthSmall="1-2" default body textCenter>Block element</Card>
 </React.Fragment>
 ```
