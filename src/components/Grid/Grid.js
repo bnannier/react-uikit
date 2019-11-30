@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import applyWidth from '../Common/applyWidth'
 import applyText from '../Common/applyText';
 import applyMargin from "../Common/applyMargin";
+import applyFlex from "../Common/applyFlex";
 
 const Grid = (props) =>{
     return (
@@ -11,7 +12,8 @@ const Grid = (props) =>{
             applyStyles(props) +
             applyWidth(props) +
             applyText(props) +
-            applyMargin(props)
+            applyMargin(props) +
+            applyFlex(props)
         } uk-grid="">{props.children}</div>
     )
 };
