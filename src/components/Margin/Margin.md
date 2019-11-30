@@ -28,7 +28,7 @@ Add one of the following props to add small spacing to block elements.
 | PROPS  | DESCRIPTION |
 | ----- | ----------- |
 | <span style="color:salmon">marginSmall</span> | Adds margin, if it is preceded by another element, and always bottom margin. |
-| <span style="color:salmon">marginSmallTop</span> | Adds top margin. |
+| <span style="color:salmon">marginTopSmall</span> | Adds top margin. |
 | <span style="color:salmon">marginSmallBottom</span> | Adds bottom margin. |
 | <span style="color:salmon">marginSmallLeft</span> | Adds left margin. |
 | <span style="color:salmon">marginSmallRight</span> | Adds right margin. |
@@ -157,7 +157,10 @@ import { Card, Panel } from '../';
 
 <React.Fragment>
     <Card margin marginAutoLeft widthSmall="1-2" default body textCenter>Block element</Card>
-    // TODO:
+    
+    <Panel flex>
+    
+    </Panel>
 
 </React.Fragment>
 ```

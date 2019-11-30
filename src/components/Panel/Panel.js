@@ -5,6 +5,7 @@ import applyPanel from "../Common/applyPanel";
 import applyWidth from "../Common/applyWidth";
 import applyMargin from "../Common/applyMargin";
 import applyVisibility from "../Common/applyVisibility";
+import applyFlex from "../Common/applyFlex";
 
 const Panel = (props) =>{
     return (
@@ -13,7 +14,8 @@ const Panel = (props) =>{
             applyPanel(props) +
             applyWidth(props) +
             applyMargin(props) +
-            applyVisibility(props)
+            applyVisibility(props) +
+            applyFlex(props)
         }>{props.children}</div>
     )
 };

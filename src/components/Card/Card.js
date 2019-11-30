@@ -5,6 +5,8 @@ import applyWidth from '../Common/applyWidth'
 import CardTitle from "./CardTitle";
 import applyBackground from "../Common/applyBackground";
 import applyMargin from "../Common/applyMargin";
+import applyHeight from "../Common/applyHeight";
+import applyFlex from "../Common/applyFlex";
 
 const Card = (props) =>{
     return (
@@ -12,7 +14,9 @@ const Card = (props) =>{
             applyStyles(props) +
             applyWidth(props) +
             applyBackground(props) +
-            applyMargin(props)
+            applyMargin(props) +
+            applyHeight(props) +
+            applyFlex(props)
         }>{props.children}</div>
     )
 };
