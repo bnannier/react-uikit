@@ -5,7 +5,7 @@ import '../index.scss';
 
 const Section = (props) =>{
     return (
-        <div className={applyStyles(props)} style={{backgroundImage: "url(" + props.image + ")"}}>{props.children}</div>
+        <div className={applyStyles(props)} style={{backgroundImage: "url(" + props.Image + ")"}}>{props.children}</div>
     )
 };
 

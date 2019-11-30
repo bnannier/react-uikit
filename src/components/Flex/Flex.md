@@ -195,7 +195,7 @@ By default, items determine their size by their content, but are allowed to shri
 | <span style="color:salmon">flex1</span> | The space is allocated solely based on flex. |
 
 ```jsx
-import { Card, Grid, Panel } from '../';
+import { Card, Grid, Image, Panel } from '../';
 
 <React.Fragment>
     <Grid flexMiddle>
@@ -203,10 +203,7 @@ import { Card, Grid, Panel } from '../';
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
         </Panel>
         <Panel widthMedium="1-3" flexFirst>
-       
-       //TODO: Image Component needs to be created
-            <img src="https://getuikit.com/docs/images/light.jpg" alt="Image" />
-        
+            <Image src="https://getuikit.com/docs/images/light.jpg" alt="Image" />
         </Panel>
     </Grid>
 </React.Fragment>
