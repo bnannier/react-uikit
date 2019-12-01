@@ -1,3 +1,5 @@
+https://getuikit.com/docs/flex
+
 #### Utilize the power of flexbox to create a wide range of layouts.
 The Flex component has an essential role in building layouts in react-uikit.
 A lot of components, for example the Grid as well as horizontal navigations,

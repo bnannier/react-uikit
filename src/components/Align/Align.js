@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Width = (props) =>{
+const Align = (props) =>{
     return (<div></div>)
 };
 
-export default Width;
+export default Align;

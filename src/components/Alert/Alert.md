@@ -1,4 +1,4 @@
-https://getuikit.com/docs/card
+https://getuikit.com/docs/alert
 
 ### Display success, warning and error messages.
 

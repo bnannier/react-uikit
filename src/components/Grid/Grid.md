@@ -1,4 +1,4 @@
-https://getuikit.com/docs/width
+https://getuikit.com/docs/grid
 
 ### Create a fully responsive, fluid and nestable grid layout.
 The Grid system of react-uikit allows you to arrange block elements in columns.  

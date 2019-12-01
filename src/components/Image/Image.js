@@ -2,10 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import '../index.scss';
+import applyMargin from "../Common/applyMargin";
+import applyAlign from "../Common/applyAlign";
 
 const Image = (props) =>{
     return (
-        <img className={applyStyles(props)} data-src={props.src} width={props.width} height={props.height} alt={props.alt} uk-img="">{props.children}</img>
+        <img className={
+            applyStyles(props) +
+            applyMargin(props) +
+            applyAlign(props)
+        } data-src={props.src} width={props.width} height={props.height} alt={props.alt} uk-img="">{props.children}</img>
     )
 };
 
