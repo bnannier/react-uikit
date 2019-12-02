@@ -102,5 +102,5 @@ Grid.defaultProps = {
     children: undefined
 };
 
-Grid.itemMatch = GridItemMatch;
+Grid.ItemMatch = GridItemMatch;
 export default Grid;

@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.4847e836.chunk.css",
-    "main.js": "/build/main.d4dd7dad.js",
+    "main.js": "/build/main.7264d657.js",
     "runtime-main.js": "/build/bundle.86c6ad91.js",
     "build/2.3d97bfcb.js": "/build/2.3d97bfcb.js",
     "build/2.3d97bfcb.js.LICENSE": "/build/2.3d97bfcb.js.LICENSE",
     "index.html": "/index.html",
-    "precache-manifest.05a225383287f0e8685ce7022a3340b2.js": "/precache-manifest.05a225383287f0e8685ce7022a3340b2.js",
+    "precache-manifest.ef2265cd29f1b00d86c42097c95d9537.js": "/precache-manifest.ef2265cd29f1b00d86c42097c95d9537.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.4847e836.chunk.css.map": "/static/css/main.4847e836.chunk.css.map",
     "static/media/index.scss": "/static/media/Roboto-ThinItalic.35a9c89a.ttf"
@@ -15,6 +15,6 @@
     "build/bundle.86c6ad91.js",
     "build/2.3d97bfcb.js",
     "static/css/main.4847e836.chunk.css",
-    "build/main.d4dd7dad.js"
+    "build/main.7264d657.js"
   ]
 }

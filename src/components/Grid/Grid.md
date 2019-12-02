@@ -199,20 +199,20 @@ import { Card, Panel } from '../';
 ------
 
 #### Match only one cell
-You can also match the height of the direct child of just one cell. To do so, use `<Grid.itemMatch/>` component to the grid item whose child you want to match.
+You can also match the height of the direct child of just one cell. To do so, use `<Grid.ItemMatch/>` component to the grid item whose child you want to match.
 
 ```jsx
 import { Card, Panel } from '../';
 <React.Fragment>
     <Grid childWidthExpandSmall textCenter>
-        <Grid.itemMatch>
+        <Grid.ItemMatch>
             <Card default body>
                 <h3>Heading</h3>
                 <p>
                     Lorem ipsum dolor sit amet.
                 </p>
             </Card>
-        </Grid.itemMatch>
+        </Grid.ItemMatch>
         <Panel>
             <h3>Heading</h3>
             <p>
@@ -232,14 +232,14 @@ IMPORTANT!TODO Fix this part once <a href='#/Height' target='blank'>Height compo
 import { Card, Panel } from '../';
 <React.Fragment>
     <Grid childWidthExpandSmall textCenter>
-        <Grid.itemMatch>
+        <Grid.ItemMatch>
             <Card default body>
                 <h3>Heading</h3>
                 <p>
                     Lorem ipsum dolor sit amet.
                 </p>
             </Card>
-        </Grid.itemMatch>
+        </Grid.ItemMatch>
         <Panel>
             <h3>Heading</h3>
             <p>
