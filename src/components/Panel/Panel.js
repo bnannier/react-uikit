@@ -10,17 +10,17 @@ import applyBackground from "../Common/applyBackground";
 import applyHeight from "../Common/applyHeight";
 import applyText from "../Common/applyText";
 
-const Panel = (props) =>{
+const Panel = (props) => {
     return (
         <div className={
             applyStyles(props) +
             applyPanel(props) +
             applyWidth(props) +
+            applyHeight.applyHeightClasses(props) +
             applyMargin(props) +
             applyVisibility(props) +
             applyFlex(props) +
             applyBackground(props) +
-            applyHeight(props) +
             applyText(props)
         }>{props.children}</div>
     )

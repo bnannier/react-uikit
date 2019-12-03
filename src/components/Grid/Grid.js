@@ -6,12 +6,14 @@ import applyText from '../Common/applyText';
 import applyMargin from '../Common/applyMargin';
 import applyFlex from '../Common/applyFlex';
 import GridItemMatch from "./GridItemMatch";
+import applyHeight from "../Common/applyHeight";
 
 const Grid = (props) => {
     return (
         <div className={
             applyStyles(props) +
             applyWidth(props) +
+            applyHeight.applyHeightClasses(props) +
             applyText(props) +
             applyMargin(props) +
             applyFlex(props)

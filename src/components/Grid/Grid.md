@@ -381,11 +381,6 @@ Take a look at the <a href='#/Filter' target='blank'>Filter component</a>.
 ### Parallax
 To move single columns of a grid at different speeds while scrolling, just add `parallax="<NUMBER>"` attribute.
 The number sets the parallax translation in pixels.
-
-```
-<Grid parallax="150">...</Grid>
-```
-
 This effect can be applied to two types of markup.
 The following example uses three defined columns with three items each.
 
