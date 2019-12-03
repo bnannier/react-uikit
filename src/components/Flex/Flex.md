@@ -15,7 +15,6 @@ By default, all flex items are aligned to the left, as wide as their content and
 | <span style="color:salmon">flex</span> | Create the flex container and behave like a block element. |
 | <span style="color:salmon">flexInline</span> | Create the flex container and behave like an inline element. |
 
-
 ```jsx
 import { Card, Panel } from '../';
 

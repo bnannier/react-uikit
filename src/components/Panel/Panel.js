@@ -9,21 +9,50 @@ import applyFlex from "../Common/applyFlex";
 import applyBackground from "../Common/applyBackground";
 import applyHeight from "../Common/applyHeight";
 import applyText from "../Common/applyText";
+import applyAnimation from "../Common/applyAnimation";
+import applyClearingFloating from "../Common/applyClearingFloating";
+import applyOverflow from "../Common/applyOverflow";
+import applyInline from "../Common/applyInline";
+import applyBoxShadow from "../Common/applyBoxShadow";
+import applyPadding from "../Common/applyPadding";
 
 const Panel = (props) =>{
+    if(props.animationToggle) {
+        return (
+            <div
+                className={
+                    applyStyles(props) +
+                    combineStyles(props)
+                }
+                tabIndex="0">{props.children}</div>
+        )
+    }else{
+        return (
+            <div className={
+                applyStyles(props) +
+                combineStyles(props)
+            }>{props.children}</div>
+        )
+    }
+};
+
+const combineStyles = (props) => {
     return (
-        <div className={
-            applyStyles(props) +
-            applyPanel(props) +
-            applyWidth(props) +
-            applyMargin(props) +
-            applyVisibility(props) +
-            applyFlex(props) +
-            applyBackground(props) +
-            applyHeight(props) +
-            applyText(props)
-        }>{props.children}</div>
-    )
+        applyPanel(props) +
+        applyWidth(props) +
+        applyMargin(props) +
+        applyVisibility(props) +
+        applyFlex(props) +
+        applyBackground(props) +
+        applyHeight(props) +
+        applyText(props) +
+        applyAnimation(props) +
+        applyClearingFloating(props) +
+        applyOverflow(props) +
+        applyInline(props) +
+        applyBoxShadow(props) +
+        applyPadding(props)
+    );
 };
 
 const applyStyles = (props) => {
@@ -31,11 +60,14 @@ const applyStyles = (props) => {
 };
 
 Panel.propTypes = {
+    /** To toggle an animation on hover or focus, add the animationToggle prop to a parent element */
+    animationToggle: PropTypes.bool,
     /** Pass children elements to this element */
     children: PropTypes.node,
 };
 
 Panel.defaultProps = {
+    animationToggle: false,
     children: undefined
 };
 
