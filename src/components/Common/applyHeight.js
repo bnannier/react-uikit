@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import classNames from "classnames";
 
-const applyHeight = (props) => {
+const applyHeightClasses = (props) => {
     return classNames(" ",
         {"uk-height-1-1": props.height1_1},
         {"uk-height-small": props.heightSmall},
@@ -14,24 +14,39 @@ const applyHeight = (props) => {
     );
 };
 
-applyHeight.propTypes = {
+applyHeightClasses.propTypes = {
     height1_1: PropTypes.bool,
     heightSmall: PropTypes.bool,
     heightMaxSmall: PropTypes.bool,
     heightMedium: PropTypes.bool,
     heightMaxMedium: PropTypes.bool,
     heightLarge: PropTypes.bool,
-    heightMaxLarge: PropTypes.bool,
+    heightMaxLarge: PropTypes.bool
 };
 
-applyHeight.defaultProps = {
+applyHeightClasses.defaultProps = {
     height1_1: false,
     heightSmall: false,
     heightMaxSmall: false,
     heightMedium: false,
     heightMaxMedium: false,
     heightLarge: false,
-    heightMaxLarge: false,
+    heightMaxLarge: false
 };
 
-export default applyHeight;
+const applyHeightAttributes = (props) => {
+
+};
+
+applyHeightAttributes.propTypes = {
+    heightViewport: PropTypes.bool,
+};
+
+applyHeightAttributes.defaultProps = {
+    heightViewport: false,
+};
+
+export default {
+    applyHeightClasses,
+    applyHeightAttributes
+};

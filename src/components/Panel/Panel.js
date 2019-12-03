@@ -44,7 +44,7 @@ const combineStyles = (props) => {
         applyVisibility(props) +
         applyFlex(props) +
         applyBackground(props) +
-        applyHeight(props) +
+        applyHeight.applyHeightClasses(props) +
         applyText(props) +
         applyAnimation(props) +
         applyClearingFloating(props) +

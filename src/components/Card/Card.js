@@ -18,7 +18,7 @@ const Card = (props) =>{
             applyWidth(props) +
             applyBackground(props) +
             applyMargin(props) +
-            applyHeight(props) +
+            applyHeight.applyHeightClasses(props) +
             applyFlex(props) +
             applyText(props) +
             applyAnimation(props) +
