@@ -23,7 +23,7 @@ const Card = (props) => {
             applyText(props) +
             applyAnimation(props) +
             applyOrigin(props)
-        } {...applyHeight.applyHeightAttributes(props)}>{props.children}>{props.children}</div>
+        } {...applyHeight.applyHeightAttributes(props)}>{props.children}</div>
     )
 };
 
