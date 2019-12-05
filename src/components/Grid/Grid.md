@@ -333,37 +333,37 @@ import { Card, Panel } from '../';
 
 ### Masonry
 If grid cells have different heights, a layout free of gaps can be created by adding `masonry="<BOOLEAN>"` attribute.
-IMPORTANT!TODO Fix this part once <a href='#/Height' target='blank'>Height component</a> is ready
+
 ```jsx
 import { Card, Panel } from '../';
 <React.Fragment>
     <Grid small childWidthSmall="1-2" childWidthMedium="1-3" masonry="true">
         <Panel>
-            <Card default flex flexCenter flexMiddle style="height: 100px">Item</Card>
+            <Card default flex flexCenter flexMiddle height="100px">Item</Card>
         </Panel>
         <Panel>
-            <Card default flex flexCenter flexMiddle style="height: 130px">Item</Card>
+            <Card default flex flexCenter flexMiddle height="130px">Item</Card>
         </Panel>
         <Panel>
-            <Card default flex flexCenter flexMiddle style="height: 150px">Item</Card>
+            <Card default flex flexCenter flexMiddle height="150px">Item</Card>
         </Panel>
         <Panel>
-            <Card default flex flexCenter flexMiddle style="height: 160px">Item</Card>
+            <Card default flex flexCenter flexMiddle height="160px">Item</Card>
         </Panel>
         <Panel>
-            <Card default flex flexCenter flexMiddle style="height: 120px">Item</Card>
+            <Card default flex flexCenter flexMiddle height="120px">Item</Card>
         </Panel>
         <Panel>
-            <Card default flex flexCenter flexMiddle style="height: 140px">Item</Card>
+            <Card default flex flexCenter flexMiddle height="140px">Item</Card>
         </Panel>
         <Panel>
-            <Card default flex flexCenter flexMiddle style="height: 200px">Item</Card>
+            <Card default flex flexCenter flexMiddle height="200px">Item</Card>
         </Panel>
         <Panel>
-            <Card default flex flexCenter flexMiddle style="height: 180px">Item</Card>
+            <Card default flex flexCenter flexMiddle height="180px">Item</Card>
         </Panel>
         <Panel>
-            <Card default flex flexCenter flexMiddle style="height: 140px">Item</Card>
+            <Card default flex flexCenter flexMiddle height="140px">Item</Card>
         </Panel>
     </Grid>
 </React.Fragment>

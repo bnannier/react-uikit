@@ -7,6 +7,7 @@ import applyMargin from '../Common/applyMargin';
 import applyFlex from '../Common/applyFlex';
 import GridItemMatch from "./GridItemMatch";
 import applyHeight from "../Common/applyHeight";
+import applyCustomStyles from "../Common/applyCustomStyles";
 
 const Grid = (props) => {
     return (
@@ -17,7 +18,7 @@ const Grid = (props) => {
             applyText(props) +
             applyMargin(props) +
             applyFlex(props)
-        } {...applyHeight.applyHeightAttributes(props)} uk-grid={applyGrid(props)} >{props.children}</div>
+        } {...applyCustomStyles(props)} {...applyHeight.applyHeightAttributes(props)} uk-grid={applyGrid(props)}>{props.children}</div>
     )
 };
 

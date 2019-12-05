@@ -36,7 +36,6 @@ applyHeightClasses.defaultProps = {
 
 const applyHeightAttributes = (props) => {
     let heightViewportOptions = [];
-    let heightViewportAttribute = {};
 
     if (props.heightViewportOffsetTop) {
         heightViewportOptions.push('offset-top:' + props.heightViewportOffsetTop);
@@ -52,7 +51,7 @@ const applyHeightAttributes = (props) => {
     }
 
     if (heightViewportOptions.length) {
-        heightViewportAttribute = {
+        return {
             'uk-height-viewport': heightViewportOptions.join(';')
         }
     } else {
@@ -61,13 +60,13 @@ const applyHeightAttributes = (props) => {
          * If we do not have offset, expand or min-height, we still might need to display uk-height-viewport empty attribute if prop is there
          */
         if (props.heightViewport) {
-            heightViewportAttribute = {
+            return {
                 'uk-height-viewport': ''
             }
+        } else {
+            return {};
         }
     }
-
-    return heightViewportAttribute;
 };
 
 applyHeightAttributes.propTypes = {

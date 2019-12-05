@@ -15,6 +15,7 @@ import applyOverflow from "../Common/applyOverflow";
 import applyInline from "../Common/applyInline";
 import applyBoxShadow from "../Common/applyBoxShadow";
 import applyPadding from "../Common/applyPadding";
+import applyCustomStyles from "../Common/applyCustomStyles";
 
 const Panel = (props) => {
     if (props.animationToggle) {
@@ -24,7 +25,7 @@ const Panel = (props) => {
                     applyStyles(props) +
                     combineStyles(props)
                 }
-                {...applyHeight.applyHeightAttributes(props)}
+                {...applyCustomStyles(props)} {...applyHeight.applyHeightAttributes(props)}
                 tabIndex="0">{props.children}</div>
         )
     } else {
@@ -32,7 +33,7 @@ const Panel = (props) => {
             <div className={
                 applyStyles(props) +
                 combineStyles(props)
-            } {...applyHeight.applyHeightAttributes(props)}>{props.children}</div>
+            } {...applyCustomStyles(props)} {...applyHeight.applyHeightAttributes(props)}>{props.children}</div>
         )
     }
 };

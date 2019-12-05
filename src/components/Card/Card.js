@@ -10,6 +10,7 @@ import applyFlex from "../Common/applyFlex";
 import applyText from "../Common/applyText";
 import applyAnimation from "../Common/applyAnimation";
 import applyOrigin from "../Common/applyOrigin";
+import applyCustomStyles from "../Common/applyCustomStyles";
 
 const Card = (props) => {
     return (
@@ -23,7 +24,7 @@ const Card = (props) => {
             applyText(props) +
             applyAnimation(props) +
             applyOrigin(props)
-        } {...applyHeight.applyHeightAttributes(props)}>{props.children}</div>
+        } style={{...applyCustomStyles(props)}} {...applyHeight.applyHeightAttributes(props)}>{props.children}</div>
     )
 };
 
