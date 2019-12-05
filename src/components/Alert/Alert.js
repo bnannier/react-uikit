@@ -1,10 +1,11 @@
 import React from 'react';
 import classNames from 'classnames';
 import PropTypes from "prop-types";
+import applyHeight from "../Common/applyHeight";
 
 const Alert = (props) =>{
     return (
-        <div className={applyStyles(props)}>{props.children}</div>
+        <div className={applyStyles(props)} {...applyHeight.applyHeightAttributes(props)}>{props.children}</div>
     )
 };
 

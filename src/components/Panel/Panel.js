@@ -16,22 +16,23 @@ import applyInline from "../Common/applyInline";
 import applyBoxShadow from "../Common/applyBoxShadow";
 import applyPadding from "../Common/applyPadding";
 
-const Panel = (props) =>{
-    if(props.animationToggle) {
+const Panel = (props) => {
+    if (props.animationToggle) {
         return (
             <div
                 className={
                     applyStyles(props) +
                     combineStyles(props)
                 }
+                {...applyHeight.applyHeightAttributes(props)}
                 tabIndex="0">{props.children}</div>
         )
-    }else{
+    } else {
         return (
             <div className={
                 applyStyles(props) +
                 combineStyles(props)
-            }>{props.children}</div>
+            } {...applyHeight.applyHeightAttributes(props)}>{props.children}</div>
         )
     }
 };

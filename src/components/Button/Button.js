@@ -1,11 +1,12 @@
 import React from 'react';
 import classNames from 'classnames';
 import PropTypes from "prop-types";
+import applyHeight from "../Common/applyHeight";
 
 const Button = (props) =>{
     if(props.close) {
         return (
-            <button className={applyStyles(props)} uk-close="">{props.children}</button>
+            <button className={applyStyles(props)} {...applyHeight.applyHeightAttributes(props)} uk-close="">{props.children}</button>
         )
     }
 };

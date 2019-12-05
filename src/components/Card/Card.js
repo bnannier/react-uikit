@@ -11,7 +11,7 @@ import applyText from "../Common/applyText";
 import applyAnimation from "../Common/applyAnimation";
 import applyOrigin from "../Common/applyOrigin";
 
-const Card = (props) =>{
+const Card = (props) => {
     return (
         <div className={
             applyStyles(props) +
@@ -23,7 +23,7 @@ const Card = (props) =>{
             applyText(props) +
             applyAnimation(props) +
             applyOrigin(props)
-        }>{props.children}</div>
+        } {...applyHeight.applyHeightAttributes(props)}>{props.children}>{props.children}</div>
     )
 };
 
