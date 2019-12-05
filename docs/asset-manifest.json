@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.4847e836.chunk.css",
-    "main.js": "/build/main.d5961d6b.js",
+    "main.css": "/static/css/main.5c22b3de.chunk.css",
+    "main.js": "/build/main.c71f1818.js",
     "runtime-main.js": "/build/bundle.86c6ad91.js",
-    "build/2.dda45301.js": "/build/2.dda45301.js",
-    "build/2.dda45301.js.LICENSE": "/build/2.dda45301.js.LICENSE",
+    "build/2.2dee4f6a.js": "/build/2.2dee4f6a.js",
+    "build/2.2dee4f6a.js.LICENSE": "/build/2.2dee4f6a.js.LICENSE",
     "index.html": "/index.html",
-    "precache-manifest.5ea4bba3675265ecead518c0352d440b.js": "/precache-manifest.5ea4bba3675265ecead518c0352d440b.js",
+    "precache-manifest.6b040d812b661bae73cc2b10dbf9d7f7.js": "/precache-manifest.6b040d812b661bae73cc2b10dbf9d7f7.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.4847e836.chunk.css.map": "/static/css/main.4847e836.chunk.css.map",
+    "static/css/main.5c22b3de.chunk.css.map": "/static/css/main.5c22b3de.chunk.css.map",
     "static/media/index.scss": "/static/media/Roboto-ThinItalic.35a9c89a.ttf"
   },
   "entrypoints": [
     "build/bundle.86c6ad91.js",
-    "build/2.dda45301.js",
-    "static/css/main.4847e836.chunk.css",
-    "build/main.d5961d6b.js"
+    "build/2.2dee4f6a.js",
+    "static/css/main.5c22b3de.chunk.css",
+    "build/main.c71f1818.js"
   ]
 }
