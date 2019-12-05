@@ -6,12 +6,12 @@ import applyHeight from "../Common/applyHeight";
 const Button = (props) =>{
     if(props.close) {
         return (
-            <button className={applyStyles(props)} {...applyHeight.applyHeightAttributes(props)} uk-close="">{props.children}</button>
+            <button className={applyClasses(props)} {...applyHeight.applyHeightAttributes(props)} uk-close="">{props.children}</button>
         )
     }
 };
 
-const applyStyles = (props) => {
+const applyClasses = (props) => {
     return classNames(" ",
         {"uk-xxx": props.xxx},
         " "

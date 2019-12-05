@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 const FormFieldset = (props) => {
-    return (<fieldset className={applyStyles(props)}>{props.children}</fieldset>);
+    return (<fieldset className={applyClasses(props)}>{props.children}</fieldset>);
 };
 
-const applyStyles = (props) => {
+const applyClasses = (props) => {
     return classNames("uk-fieldset")
 };
 

@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 const FormLegend = (props) => {
-    return (<legend className={applyStyles(props)}>{props.children}</legend>);
+    return (<legend className={applyClasses(props)}>{props.children}</legend>);
 };
 
-const applyStyles = (props) => {
+const applyClasses = (props) => {
     return classNames("uk-legend")
 };
 

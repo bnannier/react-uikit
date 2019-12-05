@@ -4,11 +4,11 @@ import PropTypes from "prop-types";
 
 const Xxxx = (props) =>{
     return (
-        <div className={applyStyles(props)}>{props.children}</div>
+        <div className={applyClasses(props)}>{props.children}</div>
     )
 };
 
-const applyStyles = (props) => {
+const applyClasses = (props) => {
     return classNames(" ",
         {"uk-xxx": props.xxx},
         " "

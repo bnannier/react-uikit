@@ -10,12 +10,12 @@ import applyFlex from "../Common/applyFlex";
 import applyText from "../Common/applyText";
 import applyAnimation from "../Common/applyAnimation";
 import applyOrigin from "../Common/applyOrigin";
-import applyCustomStyles from "../Common/applyCustomStyles";
+import applyStyles from "../Common/applyStyles";
 
 const Card = (props) => {
     return (
         <div className={
-            applyStyles(props) +
+            applyClasses(props) +
             applyWidth(props) +
             applyBackground(props) +
             applyMargin(props) +
@@ -24,11 +24,11 @@ const Card = (props) => {
             applyText(props) +
             applyAnimation(props) +
             applyOrigin(props)
-        } style={{...applyCustomStyles(props)}} {...applyHeight.applyHeightAttributes(props)}>{props.children}</div>
+        } style={{...applyStyles(props)}} {...applyHeight.applyHeightAttributes(props)}>{props.children}</div>
     )
 };
 
-const applyStyles = (props) => {
+const applyClasses = (props) => {
     return classNames(" uk-card",
         {"uk-card-body": props.body},
         {"uk-card-default": props.default},

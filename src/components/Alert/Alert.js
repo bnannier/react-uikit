@@ -5,11 +5,11 @@ import applyHeight from "../Common/applyHeight";
 
 const Alert = (props) =>{
     return (
-        <div className={applyStyles(props)} {...applyHeight.applyHeightAttributes(props)}>{props.children}</div>
+        <div className={applyClasses(props)} {...applyHeight.applyHeightAttributes(props)}>{props.children}</div>
     )
 };
 
-const applyStyles = (props) => {
+const applyClasses = (props) => {
     return classNames("uk-alert",
         {"uk-alert": props.xxx},
         " "

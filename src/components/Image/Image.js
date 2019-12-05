@@ -10,7 +10,7 @@ import applyHeight from "../Common/applyHeight";
 const Image = (props) =>{
     return (
         <img className={
-            applyStyles(props) +
+            applyClasses(props) +
             applyMargin(props) +
             applyAlign(props) +
             applyBorder(props)
@@ -18,7 +18,7 @@ const Image = (props) =>{
     )
 };
 
-const applyStyles = (props) => {
+const applyClasses = (props) => {
     return classNames(" ",
         " "
     )
