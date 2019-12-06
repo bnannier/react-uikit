@@ -89,7 +89,7 @@ import { CodeBlock, Grid, Panel } from '../';
                     &lt;div class="uk-width-1-2"&gt;...&lt;/div&gt;
                     &lt;div class="uk-width-1-2"&gt;...&lt;/div&gt;
                 &lt;/div&gt;
-                
+
                 &lt;div class="uk-child-width-1-2" uk-grid&gt;
                     &lt;div&gt;&lt;/div&gt;
                     &lt;div&gt;&lt;/div&gt;
@@ -103,7 +103,7 @@ import { CodeBlock, Grid, Panel } from '../';
                     &lt;div class="uk-width-1-2"&gt;...&lt;/div&gt;
                     &lt;div class="uk-width-1-2"&gt;...&lt;/div&gt;
                 &lt;/div&gt;
-                
+
                 &lt;div class="uk-child-width-1-2" uk-grid&gt;
                     &lt;div&gt;&lt;/div&gt;
                     &lt;div&gt;&lt;/div&gt;
@@ -227,28 +227,76 @@ import { Grid, Panel } from '../';
 
 <br /><br /><hr />
 
+### Drop Cap
+https://getuikit.com/docs/utility#drop-cap
 
+| PROPS  | DESCRIPTION |
+| ----- | ----------- |
+| <span style="color:salmon">dropcap</span> | With the dropcap prop you can achieve a drop cap in a paragraph |
 
+```jsx
+import { Paragraph } from '../';
+<React.Fragment>
+    <Paragraph dropcap>Dorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Paragraph>
+</React.Fragment>
+```
 
+<br /><br /><hr />
 
+### Logo
+https://getuikit.com/docs/utility#logo
 
+| PROPS  | DESCRIPTION |
+| ----- | ----------- |
+| <span style="color:salmon">logo</span> | With the logo prop you can easily define your logo, for example within your navbar. |
 
+```jsx
+import { Image } from '../';
 
+<React.Fragment>
 
+</React.Fragment>
+```
 
+<br /><br /><hr />
 
+### Blend Modes
+https://getuikit.com/docs/utility#blend-modes
 
+You can apply different box shadows to elements. Just add one of the following props.
 
+| PROPS  | DESCRIPTION |
+| ----- | ----------- |
+| <span style="color:salmon">xxxxxxxx</span> |  |
 
+```jsx
+import { Image } from '../';
 
+<React.Fragment>
 
+</React.Fragment>
+```
 
+<br /><br /><hr />
 
+### Transform Center
+https://getuikit.com/docs/utility#transform-center
 
+You can apply different box shadows to elements. Just add one of the following props.
 
+| PROPS  | DESCRIPTION |
+| ----- | ----------- |
+| <span style="color:salmon">xxxxxxxx</span> |  |
 
+```jsx
+import { Image } from '../';
 
+<React.Fragment>
 
+</React.Fragment>
+```
+
+<br /><br /><hr />
 
 ### Transform Origin
 https://getuikit.com/docs/utility#transform-origin
@@ -282,5 +330,43 @@ import { Card, Grid, Panel } from '../';
             <Card default body animationScaleUp transformOriginBottomCenter>Bottom Center</Card>
         </Panel>
     </Grid>
+</React.Fragment>
+```
+
+<br /><br /><hr />
+
+### Disabled
+https://getuikit.com/docs/utility#disabled
+
+You can apply different box shadows to elements. Just add one of the following props.
+
+| PROPS  | DESCRIPTION |
+| ----- | ----------- |
+| <span style="color:salmon">xxxxxxxx</span> |  |
+
+```jsx
+import { Image } from '../';
+
+<React.Fragment>
+
+</React.Fragment>
+```
+
+<br /><br /><hr />
+
+### Drag
+https://getuikit.com/docs/utility#drag
+
+You can apply different box shadows to elements. Just add one of the following props.
+
+| PROPS  | DESCRIPTION |
+| ----- | ----------- |
+| <span style="color:salmon">xxxxxxxx</span> |  |
+
+```jsx
+import { Image } from '../';
+
+<React.Fragment>
+
 </React.Fragment>
 ```
