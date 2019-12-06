@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
     styleguideDir: "docs",
     components: 'src/components/**/[A-Z]*.js',
@@ -14,5 +16,8 @@ module.exports = {
                 {src: "https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit-icons.min.js"}
             ]
         }
-    }
+    },
+    require: [
+        path.join(__dirname, 'styles.css')
+    ]
 };

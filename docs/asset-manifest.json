@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.4847e836.chunk.css",
-    "main.js": "/build/main.7264d657.js",
+    "main.css": "/static/css/main.df8e2024.chunk.css",
+    "main.js": "/build/main.429ce123.js",
     "runtime-main.js": "/build/bundle.86c6ad91.js",
-    "build/2.3d97bfcb.js": "/build/2.3d97bfcb.js",
-    "build/2.3d97bfcb.js.LICENSE": "/build/2.3d97bfcb.js.LICENSE",
+    "build/2.8d774689.js": "/build/2.8d774689.js",
+    "build/2.8d774689.js.LICENSE": "/build/2.8d774689.js.LICENSE",
     "index.html": "/index.html",
-    "precache-manifest.ef2265cd29f1b00d86c42097c95d9537.js": "/precache-manifest.ef2265cd29f1b00d86c42097c95d9537.js",
+    "precache-manifest.2344a3c9da54c71d491085080fa61828.js": "/precache-manifest.2344a3c9da54c71d491085080fa61828.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.4847e836.chunk.css.map": "/static/css/main.4847e836.chunk.css.map",
+    "static/css/main.df8e2024.chunk.css.map": "/static/css/main.df8e2024.chunk.css.map",
     "static/media/index.scss": "/static/media/Roboto-ThinItalic.35a9c89a.ttf"
   },
   "entrypoints": [
     "build/bundle.86c6ad91.js",
-    "build/2.3d97bfcb.js",
-    "static/css/main.4847e836.chunk.css",
-    "build/main.7264d657.js"
+    "build/2.8d774689.js",
+    "static/css/main.df8e2024.chunk.css",
+    "build/main.429ce123.js"
   ]
 }

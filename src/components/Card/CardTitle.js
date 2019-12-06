@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 const CardTitle = (props) => {
-    return (<h3 className={applyStyles(props)}>{props.children}</h3>);
+    return (<h3 className={applyClasses(props)}>{props.children}</h3>);
 };
 
-const applyStyles = (props) => {
+const applyClasses = (props) => {
     return classNames("uk-card-title")
 };
 

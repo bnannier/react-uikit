@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 const GridItemMatch = (props) => {
-    return (<div className={applyStyles(props)}>{props.children}</div>)
+    return (<div className={applyClasses(props)}>{props.children}</div>)
 };
 
-const applyStyles = (props) => {
+const applyClasses = (props) => {
     return classNames("uk-grid-item-match")
 };
 

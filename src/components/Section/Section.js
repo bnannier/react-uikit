@@ -2,14 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import '../index.scss';
+import applyHeight from "../Common/applyHeight";
 
 const Section = (props) =>{
     return (
-        <div className={applyStyles(props)} style={{backgroundImage: "url(" + props.Image + ")"}}>{props.children}</div>
+        <div className={
+            applyClasses(props)
+        } {...applyHeight.applyHeightAttributes(props)} style={{backgroundImage: "url(" + props.Image + ")"}}>{props.children}</div>
     )
 };
 
-const applyStyles = (props) => {
+const applyClasses = (props) => {
     return classNames(" uk-section",
         {"uk-section-default": props.default},
         {"uk-section-muted": props.muted},

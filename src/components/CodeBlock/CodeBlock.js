@@ -7,7 +7,7 @@ import '../index.scss';
 const CodeBlock = (props) =>{
     return (
         <pre className={
-            applyStyles(props) +
+            applyClasses(props) +
             applyResize(props)
         }>
             <code>{props.children}</code>
@@ -15,7 +15,7 @@ const CodeBlock = (props) =>{
     )
 };
 
-const applyStyles = (props) => {
+const applyClasses = (props) => {
     return classNames(" ")
 };
 

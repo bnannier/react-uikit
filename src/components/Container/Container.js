@@ -1,14 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import applyHeight from "../Common/applyHeight";
 
 const Container = (props) =>{
     return (
-        <div className={applyStyles(props)}>{props.children}</div>
+        <div className={
+            applyClasses(props)
+        } {...applyHeight.applyHeightAttributes(props)}>{props.children}</div>
     )
 };
 
-const applyStyles = (props) => {
+const applyClasses = (props) => {
     return classNames(" uk-container",
         {"uk-container-xsmall": props.xsmall},
         {"uk-container-small": props.small},

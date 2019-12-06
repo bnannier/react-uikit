@@ -7,17 +7,18 @@ import applyMargin from '../Common/applyMargin';
 import applyFlex from '../Common/applyFlex';
 import GridItemMatch from "./GridItemMatch";
 import applyHeight from "../Common/applyHeight";
+import applyStyles from "../Common/applyStyles";
 
 const Grid = (props) => {
     return (
         <div className={
-            applyStyles(props) +
+            applyClasses(props) +
             applyWidth(props) +
             applyHeight.applyHeightClasses(props) +
             applyText(props) +
             applyMargin(props) +
             applyFlex(props)
-        } uk-grid={applyGrid(props)}>{props.children}</div>
+        } {...applyStyles(props)} {...applyHeight.applyHeightAttributes(props)} uk-grid={applyGrid(props)}>{props.children}</div>
     )
 };
 
@@ -32,7 +33,7 @@ const applyGrid = (props) => {
     return gridOptions.join(';');
 };
 
-const applyStyles = (props) => {
+const applyClasses = (props) => {
     return classNames(" ",
         {"uk-grid-small": props.small},
         {"uk-grid-medium": props.medium},
@@ -53,10 +54,6 @@ const applyStyles = (props) => {
 };
 
 Grid.propTypes = {
-    /** If grid cells have different heights, a layout free of gaps can be created by adding this prop.  */
-    masonry: PropTypes.bool,
-    /** To move single columns of a grid at different speeds while scrolling, just add this prop. */
-    parallax: PropTypes.number,
     /** Add this props to apply a small gap. */
     small: PropTypes.bool,
     /** Add this props to apply a medium gap like the default one, but without a breakpoint. */
@@ -82,6 +79,11 @@ Grid.propTypes = {
     /** To match the height of the direct child of each cell, add this prop. */
     match: PropTypes.bool,
 
+    /** If grid cells have different heights, a layout free of gaps can be created by adding this prop.  */
+    masonry: PropTypes.bool,
+    /** To move single columns of a grid at different speeds while scrolling, just add this prop. */
+    parallax: PropTypes.number,
+
     /** Pass children elements to this element. */
     children: PropTypes.node,
 };
@@ -101,6 +103,10 @@ Grid.defaultProps = {
     rowCollapse: false,
     divider: false,
     match: false,
+
+    masonry: undefined,
+    parallax: undefined,
+
     children: undefined
 };
 
