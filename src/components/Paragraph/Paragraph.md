@@ -2,7 +2,7 @@
 
 | PROPS  | DESCRIPTION |
 | ----- | ----------- |
-| <span style="color:salmon">dropcap</span> | With the dropcap prop you can achieve a drop cap in a paragraph |
+| <span style="color:salmon">dropcap</span> | With the dropcap prop you can achieve a drop cap in a paragraph. |
 
 ```jsx
 import { Paragraph } from '../';
