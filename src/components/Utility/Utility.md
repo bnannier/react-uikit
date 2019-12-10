@@ -145,6 +145,7 @@ import { Card, Grid, Image, Panel } from '../';
 <React.Fragment>
     <Panel inline>
         <Image src="https://getuikit.com/docs/images/photo.jpg" width={300} height={0} alt="" />
+        <Panel positionMedium positionCover overlay overlayDefault flex flexCenter flexMiddle>Overlay</Panel>
     </Panel>
 </React.Fragment>
 ```
