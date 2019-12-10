@@ -19,6 +19,13 @@ const applyPosition = (props) => {
         {"uk-position-bottom-right": props.positionBottomRight},
 
         {"uk-position-cover": props.positionCover},
+
+        {"uk-position-center-left-out": props.positionCenterLeftOut},
+        {"uk-position-center-right-out": props.positionCenterRightOut},
+
+        {"uk-position-small": props.positionSmall},
+        {"uk-position-small": props.positionMedium},
+        {"uk-position-small": props.positionLarge},
         " "
     );
 };
@@ -54,6 +61,18 @@ applyPosition.propTypes = {
 
     /** If you want a position element to cover its container. */
     positionCover: PropTypes.bool,
+
+    /** Positions the element vertically centered outside on the left. */
+    positionCenterLeftOut: false,
+    /** Positions the element vertically centered outside on the right. */
+    positionCenterRightOut: false,
+
+    /** To apply a small margin to positioned elements, add the positionSmall prop. */
+    positionSmall: false,
+    /** To apply a medium margin to positioned elements, add the positionMedium prop. */
+    positionMedium: false,
+    /** To apply a large margin to positioned elements, add the positionLarge prop. */
+    positionLarge: false
 };
 
 applyPosition.defaultProps = {
@@ -73,6 +92,13 @@ applyPosition.defaultProps = {
     positionBottomRight: false,
 
     positionCover: false,
+
+    positionCenterLeftOut: false,
+    positionCenterRightOut: false,
+
+    positionSmall: false,
+    positionMedium: false,
+    positionLarge: false,
 };
 
 export default applyPosition;
