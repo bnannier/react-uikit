@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import classNames from "classnames";
+import applySelectors from "./applySelector";
 
 const applyHeightClasses = (props) => {
     return classNames(" ",
@@ -36,7 +37,12 @@ applyHeightClasses.defaultProps = {
 
 const applyHeightAttributes = (props) => {
     let heightViewportOptions = [];
+    let heightMatchOptions = [];
 
+    // Combined height options
+    let heightOptions = {};
+
+    // Process height viewport
     if (props.heightViewportOffsetTop) {
         heightViewportOptions.push('offset-top:' + props.heightViewportOffsetTop);
     }
@@ -49,40 +55,60 @@ const applyHeightAttributes = (props) => {
     if (props.heightViewportMinHeight) {
         heightViewportOptions.push('min-height:' + props.heightViewportMinHeight);
     }
-
     if (heightViewportOptions.length) {
-        return {
-            'uk-height-viewport': heightViewportOptions.join(';')
-        }
+        heightOptions['uk-height-viewport'] = heightViewportOptions.join(';');
     } else {
         /*
-         * If we do have offset, expsand or min-height, we do not need to add additional uk-height-viewport attribute as it is already there
-         * If we do not have offset, expand or min-height, we still might need to display uk-height-viewport empty attribute if prop is there
+         * If we do have viewport offset, expsand or min-height, we do not need to add additional uk-height-viewport attribute as it is already there
+         * If we do not have viewport offset, expand or min-height, we still might need to display uk-height-viewport empty attribute if prop is there
          */
         if (props.heightViewport) {
-            return {
-                'uk-height-viewport': ''
-            }
-        } else {
-            return {};
+            heightOptions['uk-height-viewport'] = '';
         }
     }
+
+    // Process height match
+    if (props.heightMatchTarget) {
+        heightMatchOptions.push('target:' + applySelectors(props.heightMatchTarget));
+    }
+    if (props.heightMatchRow) {
+        heightMatchOptions.push('row:' + props.heightMatchRow);
+    }
+    if (heightMatchOptions.length) {
+        heightOptions['uk-height-match'] = heightMatchOptions.join(';');
+    } else {
+        /*
+         * If we do have match target or row we do not need to add additional uk-height-match attribute as it is already there
+         * If we do not have match offset, target or row, we still might need to display uk-height-match empty attribute if prop is there
+         */
+        if (props.heightMatch) {
+            heightOptions['uk-height-match'] = '';
+        }
+    }
+
+    return heightOptions;
 };
 
 applyHeightAttributes.propTypes = {
     heightViewport: PropTypes.bool,
     heightViewportOffsetTop: PropTypes.bool,
-    heightViewportOffsetBottom: PropTypes.any, // Here offset-bottom can be a selector, see https://getuikit.com/docs/height#viewport-height for more details
+    heightViewportOffsetBottom: PropTypes.string, // Here offset-bottom can be a selector, see https://getuikit.com/docs/height#viewport-height for more details
     heightViewportExpand: PropTypes.bool,
     heightViewportMinHeight: PropTypes.bool,
+    heightMatch: PropTypes.bool,
+    heightMatchTarget: PropTypes.string,
+    heightMatchRow: PropTypes.bool
 };
 
 applyHeightAttributes.defaultProps = {
     heightViewport: false,
-    heightViewportOffsetTop: undefined,
+    heightViewportOffsetTop: undefined, // It is required to provide true or false for this attribute
     heightViewportOffsetBottom: undefined,
-    heightViewportExpand: undefined,
+    heightViewportExpand: undefined, // It is required to provide true or false for this attribute
     heightViewportMinHeight: undefined,
+    heightMatch: false,
+    heightMatchTarget: undefined,
+    heightMatchRow: undefined // It is required to provide true or false for this attribute
 };
 
 export default {

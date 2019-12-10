@@ -456,6 +456,7 @@ NOTE: You can view more examples in the <a href='#/Grid' target='blank'>Grid Par
 ------
 
 ### Component options
+!TODO! Fix margin and first-column components, those should be general and should not be part of a grid
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. <a href='https://getuikit.com/docs/javascript#component-configuration' target='blank'>Learn more</a>
 
 | OPTION  | VALUE       | DEFAULT     | DESCRIPTION  |
