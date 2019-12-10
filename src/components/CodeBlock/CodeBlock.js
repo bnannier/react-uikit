@@ -6,6 +6,7 @@ import "./prism.css";
 
 import '../index.scss';
 import applyResize from "../Common/applyResize";
+import applyAll from "../Common/applyAll";
 
 const CodeBlock = (props) => {
     useEffect(() => {
@@ -15,7 +16,8 @@ const CodeBlock = (props) => {
     return (
         <pre className={
             applyClasses(props) +
-            applyResize(props)
+            applyResize(props) +
+            applyAll(props)
         }>
           <code className={`language-${props.language}`}>
             {props.children}

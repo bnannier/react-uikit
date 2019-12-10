@@ -1,5 +1,4 @@
 import React from 'react';
-import classNames from 'classnames';
 import PropTypes from "prop-types";
 import applyPanel from "../Common/applyPanel";
 import applyWidth from "../Common/applyWidth";
@@ -19,13 +18,16 @@ import applyStyles from "../Common/applyStyles";
 import applyInverse from "../Common/applyInverse";
 import applyPosition from "../Common/applyPosition";
 import applyOverlay from "../Common/applyOverlay";
+import applyResponsive from "../Common/applyResponsive";
+import applyAll from "../Common/applyAll";
 
 const Panel = (props) => {
     if (props.animationToggle) {
         return (
             <div
                 className={
-                    combineClasses(props)
+                    combineClasses(props) +
+                    applyAll(props)
                 }
                 {...applyStyles(props)} {...applyHeight.applyHeightAttributes(props)}
                 tabIndex="0">{props.children}</div>
@@ -33,13 +35,15 @@ const Panel = (props) => {
     } else if (props.overlayIcon) {
         return (
             <span className={
-                combineClasses(props)
+                combineClasses(props) +
+                applyAll(props)
             } {...applyStyles(props)} {...applyHeight.applyHeightAttributes(props)} uk-overlay-icon="">{props.children}</span>
         )
     } else {
         return (
             <div className={
-                combineClasses(props)
+                combineClasses(props) +
+                applyAll(props)
             } {...applyStyles(props)} {...applyHeight.applyHeightAttributes(props)}>{props.children}</div>
         )
     }
@@ -63,7 +67,8 @@ const combineClasses = (props) => {
         applyPadding(props) +
         applyInverse(props) +
         applyPosition(props) +
-        applyOverlay(props)
+        applyOverlay(props) +
+        applyResponsive(props)
     ).trim();
 };
 

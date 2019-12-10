@@ -24,8 +24,8 @@ const applyPosition = (props) => {
         {"uk-position-center-right-out": props.positionCenterRightOut},
 
         {"uk-position-small": props.positionSmall},
-        {"uk-position-small": props.positionMedium},
-        {"uk-position-small": props.positionLarge},
+        {"uk-position-medium": props.positionMedium},
+        {"uk-position-large": props.positionLarge},
         " "
     );
 };

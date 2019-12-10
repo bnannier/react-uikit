@@ -1,12 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from "classnames";
+import applyAll from "../Common/applyAll";
 
 const Table = (props) =>{
     return (
-        <table className={applyClasses(props)}>{
-            buildTable(props.data)
-        }</table>
+        <table className={
+            applyClasses(props) +
+            applyAll(props)
+        }>{buildTable(props.data)}</table>
     )
 };
 

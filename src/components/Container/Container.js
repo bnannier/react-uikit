@@ -2,11 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import applyHeight from "../Common/applyHeight";
+import applyAll from "../Common/applyAll";
 
 const Container = (props) =>{
     return (
         <div className={
-            applyClasses(props)
+            applyClasses(props) +
+            applyAll(props)
         } {...applyHeight.applyHeightAttributes(props)}>{props.children}</div>
     )
 };

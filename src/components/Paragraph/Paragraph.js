@@ -1,9 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import applyAll from "../Common/applyAll";
 
 const Paragraph = (props) => {
-    return (<p className={applyStyles(props)}>{props.children}</p>);
+    return (
+        <p className={
+            applyStyles(props) +
+            applyAll(props)
+        }>{props.children}</p>);
 };
 
 const applyStyles = (props) => {

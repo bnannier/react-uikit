@@ -1,9 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import applyAll from "../Common/applyAll";
 
 const GridItemMatch = (props) => {
-    return (<div className={applyClasses(props)}>{props.children}</div>)
+    return (
+        <div className={
+            applyClasses(props) +
+            applyAll(props)
+        }>{props.children}</div>)
 };
 
 const applyClasses = (props) => {

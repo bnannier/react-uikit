@@ -1,9 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import applyAll from "../Common/applyAll";
 
 const FormFieldset = (props) => {
-    return (<fieldset className={applyClasses(props)}>{props.children}</fieldset>);
+    return (
+        <fieldset className={
+            applyClasses(props) +
+            applyAll(props)
+        }>{props.children}</fieldset>
+    );
 };
 
 const applyClasses = (props) => {

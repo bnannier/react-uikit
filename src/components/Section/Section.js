@@ -3,11 +3,13 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import '../index.scss';
 import applyHeight from "../Common/applyHeight";
+import applyAll from "../Common/applyAll";
 
 const Section = (props) =>{
     return (
         <div className={
-            applyClasses(props)
+            applyClasses(props) +
+            applyAll(props)
         } {...applyHeight.applyHeightAttributes(props)} style={{backgroundImage: "url(" + props.Image + ")"}}>{props.children}</div>
     )
 };

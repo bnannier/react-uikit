@@ -223,6 +223,56 @@ import { Grid, Panel } from '../';
 </React.Fragment>
 ```
 
+#### Box Shadow Bottom
+To apply a box shadow at the bottom of an element so that appears to be hovering, add the boxShadowBottom prop.
+This can also be combined with one of the other boxShadow* modifiers.
+
+| PROPS  | DESCRIPTION |
+| ----- | ----------- |
+| <span style="color:salmon">boxShadowBottom</span> | To apply a box shadow at the bottom of an element so that appears to be hovering. |
+
+```jsx
+import { Panel } from '../';
+
+<React.Fragment>
+    <Panel boxShadowBottom boxShadowSmall widthSmall="1-2" textCenter>
+        <Panel backgroundDefault paddingLarge>Box Shadow Bottom</Panel>
+    </Panel>
+</React.Fragment>
+```
+
+#### Box Shadow Hover
+To apply a box shadow on hover, add one of the following props.
+This can also be used to modify the shadow size on hover. To do so, just combine them with one of the props above.
+
+| PROPS  | DESCRIPTION |
+| ----- | ----------- |
+| <span style="color:salmon">boxShadowHoverSmall</span> | Add this prop to apply a small box shadow on hover. |
+| <span style="color:salmon">boxShadowHoverMedium</span> | Add this prop to apply a medium box shadow on hover. |
+| <span style="color:salmon">boxShadowHoverLarge</span> | Add this prop to apply a large box shadow on hover. |
+| <span style="color:salmon">boxShadowHoverXLarge</span> | Add this prop to apply a extra large box shadow on hover. |
+
+```jsx
+import { Grid, Panel } from '../';
+
+<React.Fragment>
+    <Grid childWidthSmall="1-2" textCenter>
+        <Panel>
+            <Panel boxShadowHoverSmall padding>Hover Small</Panel>
+        </Panel>
+        <Panel>
+            <Panel boxShadowHoverXLarge padding>Hover X-Large</Panel>
+        </Panel>
+        <Panel>
+            <Panel boxShadowSmall boxShadowHoverLarge padding>Small Shadow + Hover Large</Panel>
+        </Panel>
+        <Panel>
+            <Panel boxShadowXLarge boxShadowHoverMedium padding>X-Large Shadow + Hover Medium</Panel>
+        </Panel>
+    </Grid>
+</React.Fragment>
+```
+
 <br /><br /><hr />
 
 ### Drop Cap
@@ -247,17 +297,54 @@ https://getuikit.com/docs/utility#logo
 | PROPS  | DESCRIPTION |
 | ----- | ----------- |
 | <span style="color:salmon">logo</span> | With the logo prop you can easily define your logo, for example within your navbar. |
-| <span style="color:salmon">light</span> | Add the light prop from the Inverse component when displaying the image on dark backgrounds, so that its color will automatically be inverted for better visibility. |
 
 ```jsx
 import { Link, Panel } from '../';
 
 <React.Fragment>
     <Link logo href="#">Logo</Link>
-    <br /><br />
+</React.Fragment>
+```
+
+```jsx
+import { Link, Panel } from '../';
+
+<React.Fragment>
     <Panel panel padding backgroundSecondary light>
         <Link logo href="#">Logo</Link>
     </Panel>
+</React.Fragment>
+```
+
+#### Logo Image
+You can also use an <img> element, for example an SVG, as a logo.
+
+| PROPS  | DESCRIPTION |
+| ----- | ----------- |
+| <span style="color:salmon">logoInverse</span> | You can even automatically display alternative logos for light and dark backgrounds by using the Inverse component. |
+
+```jsx
+import { Grid, Panel, Link, Image } from '../';
+
+<React.Fragment>
+    <Grid childWidthExpandSmall="1-2">
+        <Panel>
+            <Panel panel padding backgroundMuted>
+                <Link logo href="#">
+                    <Image src="https://getuikit.com/docs/images/logo-placeholder.svg" alt="" />
+                    <Image logoInverse src="https://getuikit.com/docs/images/logo-placeholder-light.svg" alt="" />
+                </Link>
+            </Panel>
+        </Panel>
+        <Panel>
+            <Panel panel padding backgroundSecondary light>
+                <Link logo href="#">
+                    <Image src="https://getuikit.com/docs/images/logo-placeholder.svg" alt="" />
+                    <Image logoInverse src="https://getuikit.com/docs/images/logo-placeholder-light.svg" alt="" />
+                </Link>
+            </Panel>
+        </Panel>
+    </Grid>
 </React.Fragment>
 ```
 
@@ -266,17 +353,155 @@ import { Link, Panel } from '../';
 ### Blend Modes
 https://getuikit.com/docs/utility#blend-modes
 
-You can apply different box shadows to elements. Just add one of the following props.
+Add one of the following props to apply different blend modes to your backgrounds, for example when placing them on images.
+You can combine these with the Overlay component.
+For a better understanding of how background blend modes work, take a look at this CSS Tricks article.
+
 
 | PROPS  | DESCRIPTION |
 | ----- | ----------- |
-| <span style="color:salmon">xxxxxxxx</span> |  |
+| <span style="color:salmon">blendMultiply</span> | This class sets the blend mode to multiply. |
+| <span style="color:salmon">blendScreen</span> | This class sets the blend mode to screen. |
+| <span style="color:salmon">blendOverlay</span> | This class sets the blend mode to overlay. |
+| <span style="color:salmon">blendDarken</span> | This class sets the blend mode to darken. |
+| <span style="color:salmon">blendLighten</span> | This class sets the blend mode to lighten. |
+| <span style="color:salmon">blendColorDodge</span> | This class sets the blend mode to color dodge. |
+| <span style="color:salmon">blendColorBurn</span> | This class sets the blend mode to color burn. |
+| <span style="color:salmon">blendHardLight</span> | This class sets the blend mode to hard light. |
+| <span style="color:salmon">blendSoftLight</span> | This class sets the blend mode to soft light. |
+| <span style="color:salmon">blendDifference</span> | This class sets the blend mode to difference. |
+| <span style="color:salmon">blendExclusion</span> | This class sets the blend mode to exclusion. |
+| <span style="color:salmon">blendHue</span> | This class sets the blend mode to hue. |
+| <span style="color:salmon">blendSaturation</span> | This class sets the blend mode to saturation. |
+| <span style="color:salmon">blendColor</span> | This class sets the blend mode to color. |
+| <span style="color:salmon">blendLuminosity</span> | This class sets the blend mode to luminosity. |
 
 ```jsx
-import { Image } from '../';
+import { Grid, Image, Panel, Paragraph } from '../';
 
 <React.Fragment>
-
+    <Grid childWidth="1-2" childWidthSmall="1-3" small light>
+        <Panel>
+            <Panel inline backgroundPrimary>
+                <Image blendMultiply src="https://getuikit.com/docs/images/dark.jpg" alt="Blend Multiply" />
+                <Panel positionCenter>
+                    <Paragraph marginRemove>Multiply</Paragraph>
+                </Panel>
+            </Panel>
+        </Panel>
+        <Panel>
+            <Panel inline backgroundPrimary>
+                <Image blendScreen src="https://getuikit.com/docs/images/dark.jpg" alt="Blend Screen" />
+                <Panel positionCenter>
+                    <Paragraph marginRemove>Screen</Paragraph>
+                </Panel>
+            </Panel>
+        </Panel>
+        <Panel>
+            <Panel inline backgroundPrimary>
+                <Image blendOverlay src="https://getuikit.com/docs/images/dark.jpg" alt="Blend Overlay" />
+                <Panel positionCenter>
+                    <Paragraph marginRemove>Overlay</Paragraph>
+                </Panel>
+            </Panel>
+        </Panel>
+        <Panel>
+            <Panel inline backgroundPrimary>
+                <Image blendDarken src="https://getuikit.com/docs/images/dark.jpg" alt="Blend Darken" />
+                <Panel positionCenter>
+                    <Paragraph marginRemove>Darken</Paragraph>
+                </Panel>
+            </Panel>
+        </Panel>
+        <Panel>
+            <Panel inline backgroundPrimary>
+                <Image blendLighten src="https://getuikit.com/docs/images/dark.jpg" alt="Blend Lighten" />
+                <Panel positionCenter>
+                    <Paragraph marginRemove>Lighten</Paragraph>
+                </Panel>
+            </Panel>
+        </Panel>
+        <Panel>
+            <Panel inline backgroundPrimary>
+                <Image blendColorDodge src="https://getuikit.com/docs/images/dark.jpg" alt="Blend Color Dodge" />
+                <Panel positionCenter>
+                    <Paragraph marginRemove>Color Dodge</Paragraph>
+                </Panel>
+            </Panel>
+        </Panel>
+        <Panel>
+            <Panel inline backgroundPrimary>
+                <Image blendColorBurn src="https://getuikit.com/docs/images/dark.jpg" alt="Blend Color Burn" />
+                <Panel positionCenter>
+                    <Paragraph marginRemove>Color Burn</Paragraph>
+                </Panel>
+            </Panel>
+        </Panel>
+        <Panel>
+            <Panel inline backgroundPrimary>
+                <Image blendHardLight src="https://getuikit.com/docs/images/dark.jpg" alt="Blend Hard Light" />
+                <Panel positionCenter>
+                    <Paragraph marginRemove>Hard Light</Paragraph>
+                </Panel>
+            </Panel>
+        </Panel>
+        <Panel>
+            <Panel inline backgroundPrimary>
+                <Image blendSoftLight src="https://getuikit.com/docs/images/dark.jpg" alt="Blend Soft Light" />
+                <Panel positionCenter>
+                    <Paragraph marginRemove>Soft Light</Paragraph>
+                </Panel>
+            </Panel>
+        </Panel>
+        <Panel>
+            <Panel inline backgroundPrimary>
+                <Image blendDifference src="https://getuikit.com/docs/images/dark.jpg" alt="Blend Difference" />
+                <Panel positionCenter>
+                    <Paragraph marginRemove>Difference</Paragraph>
+                </Panel>
+            </Panel>
+        </Panel>
+        <Panel>
+            <Panel inline backgroundPrimary>
+                <Image blendExclusion src="https://getuikit.com/docs/images/dark.jpg" alt="Blend Exclusion" />
+                <Panel positionCenter>
+                    <Paragraph marginRemove>Exclusion</Paragraph>
+                </Panel>
+            </Panel>
+        </Panel>
+        <Panel>
+            <Panel inline backgroundPrimary>
+                <Image blendHue src="https://getuikit.com/docs/images/dark.jpg" alt="Blend Hue" />
+                <Panel positionCenter>
+                    <Paragraph marginRemove>Hue</Paragraph>
+                </Panel>
+            </Panel>
+        </Panel>
+        <Panel>
+            <Panel inline backgroundPrimary>
+                <Image blendSaturation src="https://getuikit.com/docs/images/dark.jpg" alt="Blend Saturation" />
+                <Panel positionCenter>
+                    <Paragraph marginRemove>Saturation</Paragraph>
+                </Panel>
+            </Panel>
+        </Panel>
+        <Panel>
+            <Panel inline backgroundPrimary>
+                <Image blendColor src="https://getuikit.com/docs/images/dark.jpg" alt="Blend Color" />
+                <Panel positionCenter>
+                    <Paragraph marginRemove>Color</Paragraph>
+                </Panel>
+            </Panel>
+        </Panel>
+        <Panel>
+            <Panel inline backgroundPrimary>
+                <Image blendLuminosity src="https://getuikit.com/docs/images/dark.jpg" alt="Blend Luminosity" />
+                <Panel positionCenter>
+                    <Paragraph marginRemove>Luminosity</Paragraph>
+                </Panel>
+            </Panel>
+        </Panel>
+    </Grid>
 </React.Fragment>
 ```
 

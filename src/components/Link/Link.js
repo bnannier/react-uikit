@@ -2,10 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import '../index.scss';
+import applyAll from "../Common/applyAll";
 
 const Link = (props) =>{
     return (
-        <a className={applyStyles(props)} href={props.href}>{props.children}</a>
+        <a className={
+            applyStyles(props) +
+            applyAll(props)
+        } href={props.href}>{props.children}</a>
     )
 };
 
