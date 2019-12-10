@@ -3,7 +3,7 @@ https://getuikit.com/docs/flex
 #### Utilize the power of flexbox to create a wide range of layouts.
 The Flex component has an essential role in building layouts in react-uikit.
 A lot of components, for example the Grid as well as horizontal navigations,
-like the Navbar, Subnav, Breadcrumb, Pagination, Tab and Dotnav are built with 
+like the Navbar, Subnav, Breadcrumb, Pagination, Tab and Dotnav are built with
 flexbox and can be used together with the utility props from this component.
 
 ### Usage
@@ -150,10 +150,10 @@ import { Card, Panel } from '../';
     <Panel flex flexWrap flexWrapAround backgroundMuted heightMedium textCenter>
         <Card default body small width="1-3">Item 1</Card>
         <Card default body small width="1-2" marginLeft>Item 2</Card>
-        
+
         <Card default body small width="1-3">Item 3</Card>
         <Card default body small width="1-3" marginLeft>Item 4</Card>
-        
+
         <Card default body small width="1-2">Item 5</Card>
         <Card default body small width="1-3" marginLeft>Item 6</Card>
     </Panel>

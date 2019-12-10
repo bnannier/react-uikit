@@ -16,22 +16,29 @@ import applyInline from "../Common/applyInline";
 import applyBoxShadow from "../Common/applyBoxShadow";
 import applyPadding from "../Common/applyPadding";
 import applyStyles from "../Common/applyStyles";
+import applyInverse from "../Common/applyInverse";
+import applyPosition from "../Common/applyPosition";
+import applyOverlay from "../Common/applyOverlay";
 
 const Panel = (props) => {
     if (props.animationToggle) {
         return (
             <div
                 className={
-                    applyClasses(props) +
                     combineClasses(props)
                 }
                 {...applyStyles(props)} {...applyHeight.applyHeightAttributes(props)}
                 tabIndex="0">{props.children}</div>
         )
+    } else if (props.overlayIcon) {
+        return (
+            <span className={
+                combineClasses(props)
+            } {...applyStyles(props)} {...applyHeight.applyHeightAttributes(props)} uk-overlay-icon="">{props.children}</span>
+        )
     } else {
         return (
             <div className={
-                applyClasses(props) +
                 combineClasses(props)
             } {...applyStyles(props)} {...applyHeight.applyHeightAttributes(props)}>{props.children}</div>
         )
@@ -53,23 +60,25 @@ const combineClasses = (props) => {
         applyOverflow(props) +
         applyInline(props) +
         applyBoxShadow(props) +
-        applyPadding(props)
-    );
-};
-
-const applyClasses = (props) => {
-    return classNames(" ")
+        applyPadding(props) +
+        applyInverse(props) +
+        applyPosition(props) +
+        applyOverlay(props)
+    ).trim();
 };
 
 Panel.propTypes = {
     /** To toggle an animation on hover or focus, add the animationToggle prop to a parent element */
     animationToggle: PropTypes.bool,
+    /** To display an overlay icon. */
+    overlayIcon: PropTypes.bool,
     /** Pass children elements to this element */
     children: PropTypes.node,
 };
 
 Panel.defaultProps = {
     animationToggle: false,
+    overlayIcon: false,
     children: undefined
 };
 

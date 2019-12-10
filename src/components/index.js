@@ -11,4 +11,5 @@ export { default as List } from './List';
 export { default as Panel } from './Panel';
 export { default as Paragraph } from './Paragraph';
 export { default as Section } from './Section';
+export { default as Table } from './Table';
 

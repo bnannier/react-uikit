@@ -3,7 +3,7 @@ import classNames from "classnames";
 
 const applyInline = (props) => {
     return classNames(" ",
-        {"uk-inline": props.displayBlock},
+        {"uk-inline": props.inline},
         {"uk-inline-clip": props.displayInline},
         " "
     );

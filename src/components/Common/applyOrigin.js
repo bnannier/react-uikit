@@ -18,12 +18,37 @@ const applyOrigin = (props) => {
 };
 
 applyOrigin.propTypes = {
-    /** Aligns text to the left. */
-    textLeft: PropTypes.bool,
+    /** The transition originates from the top left. */
+    transformOriginTopLeft: PropTypes.bool,
+    /** The transition originates from the top. */
+    transformOriginTopCenter: PropTypes.bool,
+    /** The transition originates from the top right. */
+    transformOriginTopRight: PropTypes.bool,
+
+    /** The transition originates from the left. */
+    transformOriginCenterLeft: PropTypes.bool,
+    /** The transition originates from the right. */
+    transformOriginCenterRight: PropTypes.bool,
+
+    /** The transition originates from the bottom left. */
+    transformOriginBottomLeft: PropTypes.bool,
+    /** The transition originates from the bottom. */
+    transformOriginBottomCenter: PropTypes.bool,
+    /** The transition originates from the bottom right. */
+    transformOriginBottomRight: PropTypes.bool,
 };
 
 applyOrigin.defaultProps = {
-    textLeft: false,
+    transformOriginTopLeft: false,
+    transformOriginTopCenter: false,
+    transformOriginTopRight: false,
+
+    transformOriginCenterLeft: false,
+    transformOriginCenterRight: false,
+
+    transformOriginBottomLeft: false,
+    transformOriginBottomCenter: false,
+    transformOriginBottomRight: false,
 };
 
 export default applyOrigin;

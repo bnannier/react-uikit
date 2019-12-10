@@ -11,6 +11,8 @@ const Link = (props) =>{
 
 const applyStyles = (props) => {
     return classNames(" ",
+        {"uk-logo": props.logo},
+        {"uk-link-text": props.text},
         {"uk-link-muted": props.muted},
         " "
     )
@@ -32,6 +34,7 @@ Link.propTypes = {
 Link.defaultProps = {
     logo: false,
     text: false,
+    muted: false,
     href: "",
     children: undefined
 };

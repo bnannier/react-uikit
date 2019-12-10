@@ -38,9 +38,7 @@ Image.propTypes = {
 };
 
 Image.defaultProps = {
-    src: false,
-    width: false,
-    height: false,
+    src: "",
     children: undefined
 };
 

@@ -39,27 +39,22 @@ These utilities provide different classes to modify an element's overflow behavi
 | <span style="color:salmon">overflowAuto</span> | Add this prop to create a container that provides a horizontal or vertical scrollbar whenever the elements content it are wider or higher than the container itself. |
 
 ```jsx
-import { Card, Grid, Panel } from '../';
+import { Panel, Table } from '../';
+
+let data = {
+    header: ["Heading 1","Heading 2","Heading 3","Heading 4","Heading 5","Heading 6","Heading 7","Heading 8"],
+    footer: ["Footer 1","Footer 2","Footer 3","Footer 4","Footer 5","Footer 6","Footer 7","Footer 8"],
+    body: [
+        ["Data 1","Data 2","Data 3","Data 4","Data 5","Data 6","Data 7","Data 8"],
+        ["Data 1","Data 2","Data 3","Data 4","Data 5","Data 6","Data 7","Data 8"],
+        ["Data 1","Data 2","Data 3","Data 4","Data 5","Data 6","Data 7","Data 8"]
+    ]
+};
+
 
 <React.Fragment>
-// TODO: table
-
-</React.Fragment>
-```
-
-Add the overflowAuto attribute to expand an element's height to make it fill the remaining height of a parent container.
-It provides a vertical scrollbar if its content is higher than the expanded height.
-
-```jsx
-import { Grid, Panel } from '../';
-
-<React.Fragment>
-    <Panel heightMedium>
-        <p>Some content before the overflow auto container.</p>
-        <Panel >
-            // TODO: js-wrapper
-        </Panel>
-        <p>Some content after the overflow auto container.</p>
+    <Panel overflowAuto heightSmall>
+        <Table data={data} />
     </Panel>
 </React.Fragment>
 ```
@@ -82,32 +77,35 @@ import { CodeBlock, Grid, Panel } from '../';
 <React.Fragment>
     <Grid childWidthSmall="1-2">
         <Panel>
-// TODO: Codeblock
-            <CodeBlock resizeVertical>
-                &lt;!-- Resize vertically --&gt;
-                &lt;div uk-grid&gt;
-                    &lt;div class="uk-width-1-2"&gt;...&lt;/div&gt;
-                    &lt;div class="uk-width-1-2"&gt;...&lt;/div&gt;
-                &lt;/div&gt;
+            <CodeBlock resizeVertical language="xml">
+{`
+<!-- Resize vertically -->
+<Grid>
+    <Panel width="1-2">...</Panel>
+    <Panel width="1-2">...</Panel>
+</Grid>
 
-                &lt;div class="uk-child-width-1-2" uk-grid&gt;
-                    &lt;div&gt;&lt;/div&gt;
-                    &lt;div&gt;&lt;/div&gt;
-                &lt;/div&gt;
+<Grid childWidth="1-2">
+    <Panel></Panel>
+    <Panel></Panel>
+</Grid>
+`}
             </CodeBlock>
         </Panel>
         <Panel>
-            <CodeBlock resize>
-                &lt;!-- Resize vertically --&gt;
-                &lt;div uk-grid&gt;
-                    &lt;div class="uk-width-1-2"&gt;...&lt;/div&gt;
-                    &lt;div class="uk-width-1-2"&gt;...&lt;/div&gt;
-                &lt;/div&gt;
+            <CodeBlock resize language="xml">
+{`
+<!-- Resize vertically -->
+<Grid>
+    <Panel width="1-2">...</Panel>
+    <Panel width="1-2">...</Panel>
+</Grid>
 
-                &lt;div class="uk-child-width-1-2" uk-grid&gt;
-                    &lt;div&gt;&lt;/div&gt;
-                    &lt;div&gt;&lt;/div&gt;
-                &lt;/div&gt;
+<Grid childWidth="1-2">
+    <Panel></Panel>
+    <Panel></Panel>
+</Grid>
+`}
             </CodeBlock>
         </Panel>
     </Grid>
@@ -146,8 +144,7 @@ import { Card, Grid, Image, Panel } from '../';
 
 <React.Fragment>
     <Panel inline>
-        <Image src="https://getuikit.com/docs/images/photo.jpg" width="300" alt="" />
-        // TODO: Overlay
+        <Image src="https://getuikit.com/docs/images/photo.jpg" width={300} height={0} alt="" />
     </Panel>
 </React.Fragment>
 ```
@@ -184,9 +181,9 @@ To modify the border radius of an element, like an image, add one of the followi
 import { Image } from '../';
 
 <React.Fragment>
-    <Image borderRounded src="https://getuikit.com/docs/images/avatar.jpg" width="200" height="200" alt="Border rounded" />
-    <Image borderCircle src="https://getuikit.com/docs/images/avatar.jpg" width="200" height="200" alt="Border circle" />
-    <Image borderPill src="https://getuikit.com/docs/images/avatar.jpg" width="200" height="200" alt="Border pill" />
+    <Image borderRounded src="https://getuikit.com/docs/images/avatar.jpg" width={200} height={200} alt="Border rounded" />
+    <Image borderCircle src="https://getuikit.com/docs/images/avatar.jpg" width={200} height={200} alt="Border circle" />
+    <Image borderPill src="https://getuikit.com/docs/images/avatar.jpg" width={200} height={200} alt="Border pill" />
 </React.Fragment>
 ```
 
@@ -249,12 +246,17 @@ https://getuikit.com/docs/utility#logo
 | PROPS  | DESCRIPTION |
 | ----- | ----------- |
 | <span style="color:salmon">logo</span> | With the logo prop you can easily define your logo, for example within your navbar. |
+| <span style="color:salmon">light</span> | Add the light prop from the Inverse component when displaying the image on dark backgrounds, so that its color will automatically be inverted for better visibility. |
 
 ```jsx
-import { Image } from '../';
+import { Link, Panel } from '../';
 
 <React.Fragment>
-
+    <Link logo href="#">Logo</Link>
+    <br /><br />
+    <Panel panel padding backgroundSecondary light>
+        <Link logo href="#">Logo</Link>
+    </Panel>
 </React.Fragment>
 ```
 

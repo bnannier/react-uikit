@@ -8,6 +8,10 @@ const Button = (props) =>{
         return (
             <button className={applyClasses(props)} {...applyHeight.applyHeightAttributes(props)} uk-close="">{props.children}</button>
         )
+    }else {
+        return (
+            <button className={applyClasses(props)} {...applyHeight.applyHeightAttributes(props)}>{props.children}</button>
+        )
     }
 };
 
