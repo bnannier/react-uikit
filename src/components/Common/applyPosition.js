@@ -26,6 +26,11 @@ const applyPosition = (props) => {
         {"uk-position-small": props.positionSmall},
         {"uk-position-medium": props.positionMedium},
         {"uk-position-large": props.positionLarge},
+
+        {"uk-position-relative": props.positionRelative},
+        {"uk-position-absolute": props.positionAbsolute},
+        {"uk-position-fixed": props.positionFixed},
+        {"uk-position-z-index": props.positionZIndex},
         " "
     );
 };
@@ -72,7 +77,16 @@ applyPosition.propTypes = {
     /** To apply a medium margin to positioned elements, add the positionMedium prop. */
     positionMedium: false,
     /** To apply a large margin to positioned elements, add the positionLarge prop. */
-    positionLarge: false
+    positionLarge: false,
+
+    /** Add this class to apply relative positioning. */
+    positionRelative: false,
+    /** Add this class to apply absolute positioning. */
+    positionAbsolute: false,
+    /** Add this class to apply fixed positioning. */
+    positionFixed: false,
+    /** Add this class to apply a z-index of 1. */
+    positionZIndex: false,
 };
 
 applyPosition.defaultProps = {
@@ -99,6 +113,11 @@ applyPosition.defaultProps = {
     positionSmall: false,
     positionMedium: false,
     positionLarge: false,
+
+    positionRelative: false,
+    positionAbsolute: false,
+    positionFixed: false,
+    positionZIndex: false,
 };
 
 export default applyPosition;

@@ -9,7 +9,7 @@ import applyHeight from "../Common/applyHeight";
 import applyFlex from "../Common/applyFlex";
 import applyText from "../Common/applyText";
 import applyAnimation from "../Common/applyAnimation";
-import applyOrigin from "../Common/applyOrigin";
+import applyTransform from "../Common/applyTransform";
 import applyStyles from "../Common/applyStyles";
 import applyAll from "../Common/applyAll";
 
@@ -24,7 +24,7 @@ const Card = (props) => {
             applyFlex(props) +
             applyText(props) +
             applyAnimation(props) +
-            applyOrigin(props) +
+            applyTransform(props) +
             applyAll(props)
         } style={{...applyStyles(props)}} {...applyHeight.applyHeightAttributes(props)}>{props.children}</div>
     )

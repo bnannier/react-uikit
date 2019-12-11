@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import classNames from "classnames";
 
-const applyOrigin = (props) => {
+const applyTransform = (props) => {
     return classNames(" ",
         {"uk-transform-origin-top-left": props.transformOriginTopLeft},
         {"uk-transform-origin-top-center": props.transformOriginTopCenter},
@@ -13,11 +13,13 @@ const applyOrigin = (props) => {
         {"uk-transform-origin-bottom-left": props.transformOriginBottomLeft},
         {"uk-transform-origin-bottom-center": props.transformOriginBottomCenter},
         {"uk-transform-origin-bottom-right": props.transformOriginBottomRight},
+
+        {"uk-transform-center": props.transformCenter},
         " "
     );
 };
 
-applyOrigin.propTypes = {
+applyTransform.propTypes = {
     /** The transition originates from the top left. */
     transformOriginTopLeft: PropTypes.bool,
     /** The transition originates from the top. */
@@ -36,9 +38,12 @@ applyOrigin.propTypes = {
     transformOriginBottomCenter: PropTypes.bool,
     /** The transition originates from the bottom right. */
     transformOriginBottomRight: PropTypes.bool,
+
+    /** To center an element to itself, add the transformCenter prop. */
+    transformCenter: PropTypes.bool,
 };
 
-applyOrigin.defaultProps = {
+applyTransform.defaultProps = {
     transformOriginTopLeft: false,
     transformOriginTopCenter: false,
     transformOriginTopRight: false,
@@ -49,6 +54,8 @@ applyOrigin.defaultProps = {
     transformOriginBottomLeft: false,
     transformOriginBottomCenter: false,
     transformOriginBottomRight: false,
+
+    transformCenter: false,
 };
 
-export default applyOrigin;
+export default applyTransform;

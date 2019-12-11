@@ -507,26 +507,30 @@ import { Grid, Image, Panel, Paragraph } from '../';
 
 <br /><br /><hr />
 
-### Transform Center
+### Transform
+
+#### Center
 https://getuikit.com/docs/utility#transform-center
 
-You can apply different box shadows to elements. Just add one of the following props.
+To center an element to itself, add the transformCenter prop.
+This is particularly useful for absolute positioning.
 
 | PROPS  | DESCRIPTION |
 | ----- | ----------- |
-| <span style="color:salmon">xxxxxxxx</span> |  |
+| <span style="color:salmon">transformCenter</span> | To center an element to itself, add the transformCenter prop. |
 
 ```jsx
-import { Image } from '../';
+import { Image, Link, Panel } from '../';
 
 <React.Fragment>
-
+    <Panel inline>
+        <Image blendLuminosity src="https://getuikit.com/docs/images/light.jpg" alt="Blend Luminosity" />
+        <Link positionAbsolute transformCenter href="#" marker left="50%" top="50%"></Link>
+    </Panel>
 </React.Fragment>
 ```
 
-<br /><br /><hr />
-
-### Transform Origin
+#### Origin
 https://getuikit.com/docs/utility#transform-origin
 
 To modify the origin of an animation, like scaling, add one of the transformOrigin* props.
@@ -566,17 +570,17 @@ import { Card, Grid, Panel } from '../';
 ### Disabled
 https://getuikit.com/docs/utility#disabled
 
-You can apply different box shadows to elements. Just add one of the following props.
+To disable the click behavior of any element, like a Link, Button or IFrame component, add the disabled prop.
 
 | PROPS  | DESCRIPTION |
 | ----- | ----------- |
-| <span style="color:salmon">xxxxxxxx</span> |  |
+| <span style="color:salmon">disabled</span> | To disable the click behavior of any element, like a Link, Button or IFrame component, add the disabled prop. |
 
 ```jsx
-import { Image } from '../';
+import { Button } from '../';
 
 <React.Fragment>
-
+    <Button disable>Disabled</Button>
 </React.Fragment>
 ```
 
@@ -585,16 +589,19 @@ import { Image } from '../';
 ### Drag
 https://getuikit.com/docs/utility#drag
 
-You can apply different box shadows to elements. Just add one of the following props.
+To apply a move cursor to elements that are being dragged, add the drag prop.
 
 | PROPS  | DESCRIPTION |
 | ----- | ----------- |
-| <span style="color:salmon">xxxxxxxx</span> |  |
+| <span style="color:salmon">drag</span> | To apply a move cursor to elements that are being dragged, add the drag prop. |
+| <span style="color:salmon">dragOver</span> | To create a box shadow on an upload area when dragging a file over it, add the dragOver prop. |
 
 ```jsx
-import { Image } from '../';
+import { Icon, Panel } from '../';
 
 <React.Fragment>
-
+    <Panel drag widthSmall padding backgroundMuted textCenter>
+        <Icon move ratio="2" />
+    </Panel>
 </React.Fragment>
 ```

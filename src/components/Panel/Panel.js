@@ -20,6 +20,7 @@ import applyPosition from "../Common/applyPosition";
 import applyOverlay from "../Common/applyOverlay";
 import applyResponsive from "../Common/applyResponsive";
 import applyAll from "../Common/applyAll";
+import applyDrag from "../Common/applyDrag";
 
 const Panel = (props) => {
     if (props.animationToggle) {
@@ -68,6 +69,7 @@ const combineClasses = (props) => {
         applyInverse(props) +
         applyPosition(props) +
         applyOverlay(props) +
+        applyDrag(props) +
         applyResponsive(props)
     ).trim();
 };
