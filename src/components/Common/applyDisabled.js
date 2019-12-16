@@ -9,7 +9,7 @@ const applyDisabled = (props) => {
 };
 
 applyDisabled.propTypes = {
-    /** To disable the click behavior of any element, like a <Link>, <Button> or <IFrame> element, add the disabled prop. */
+    /** To disable the click behavior of any element, like a Link, Button or IFrame element, add the disabled prop. */
     disable: PropTypes.bool
 };
 

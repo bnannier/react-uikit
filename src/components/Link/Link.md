@@ -6,7 +6,7 @@ https://getuikit.com/docs/link
 ### Muted Modifier
 The Base component determines the default link color.
 If you want the link to a apply a muted style instead, just add the muted prop to the anchor element.
-You can also add the prop to a parent element and it will be applied to all <Link> components inside it.
+You can also add the prop to a parent element and it will be applied to all Link components inside it.
 
 | PROPS  | DESCRIPTION |
 | ----- | ----------- |
@@ -24,7 +24,7 @@ import { Link, Paragraph } from '../';
 
 ### Text Modifier
 To make a link appear like body text and apply a hover effect, add the text prop to the anchor element.
-You can also add the prop to a parent element and it will be applied to all <Link> components inside it.
+You can also add the prop to a parent element and it will be applied to all Link components inside it.
 This is useful for link lists in the page footer.
 
 | PROPS  | DESCRIPTION |

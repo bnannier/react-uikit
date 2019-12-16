@@ -199,7 +199,7 @@ import { Card, Panel } from '../';
 ------
 
 #### Match only one cell
-You can also match the height of the direct child of just one cell. To do so, use `<Grid.ItemMatch/>` component to the grid item whose child you want to match.
+You can also match the height of the direct child of just one cell. To do so, use Grid.ItemMatch component to the grid item whose child you want to match.
 
 ```jsx
 import { Card, Panel } from '../';
@@ -332,12 +332,12 @@ import { Card, Panel } from '../';
 ------
 
 ### Masonry
-If grid cells have different heights, a layout free of gaps can be created by adding `masonry="<BOOLEAN>"` attribute.
+If grid cells have different heights, a layout free of gaps can be created by adding `masonry` attribute.
 
 ```jsx
 import { Card, Panel } from '../';
 <React.Fragment>
-    <Grid small childWidthSmall="1-2" childWidthMedium="1-3" masonry="true">
+    <Grid small childWidthSmall="1-2" childWidthMedium="1-3" masonry>
         <Panel>
             <Card default flex flexCenter flexMiddle height="100px">Item</Card>
         </Panel>
@@ -379,7 +379,7 @@ Take a look at the <a href='#/Filter' target='blank'>Filter component</a>.
 ------
 
 ### Parallax
-To move single columns of a grid at different speeds while scrolling, just add `parallax="<NUMBER>"` attribute.
+To move single columns of a grid at different speeds while scrolling, just add `parallax` attribute.
 The number sets the parallax translation in pixels.
 This effect can be applied to two types of markup.
 The following example uses three defined columns with three items each.
@@ -387,7 +387,7 @@ The following example uses three defined columns with three items each.
 ```jsx
 import { Card, Panel } from '../';
 <React.Fragment>
-    <Grid childWidthExpandSmall textCenter parallax="150">
+    <Grid childWidthExpandSmall textCenter parallax={150}>
         <Panel>
             <Card default body>Item</Card>
             <Card default body>Item</Card>
@@ -411,7 +411,7 @@ The parallax effect is also applied if grid columns wrap into the next row, as s
 ```jsx
 import { Card, Panel } from '../';
 <React.Fragment>
-    <Grid childWidthSmall="1-2" childWidthMedium="1-3" childWidthLarge="1-4"textCenter parallax="150">
+    <Grid childWidthSmall="1-2" childWidthMedium="1-3" childWidthLarge="1-4"textCenter parallax={150}>
         <Panel>
             <Card default body>Item</Card>
         </Panel>

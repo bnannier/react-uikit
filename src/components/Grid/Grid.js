@@ -106,8 +106,8 @@ Grid.defaultProps = {
     divider: false,
     match: false,
 
-    masonry: undefined,
-    parallax: undefined,
+    masonry: false,
+    parallax: 0,
 
     children: undefined
 };

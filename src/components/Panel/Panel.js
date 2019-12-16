@@ -8,7 +8,6 @@ import applyFlex from "../Common/applyFlex";
 import applyBackground from "../Common/applyBackground";
 import applyHeight from "../Common/applyHeight";
 import applyText from "../Common/applyText";
-import applyAnimation from "../Common/applyAnimation";
 import applyClearingFloating from "../Common/applyClearingFloating";
 import applyOverflow from "../Common/applyOverflow";
 import applyInline from "../Common/applyInline";
@@ -23,22 +22,13 @@ import applyAll from "../Common/applyAll";
 import applyDrag from "../Common/applyDrag";
 
 const Panel = (props) => {
-    if (props.animationToggle) {
-        return (
-            <div
-                className={
-                    combineClasses(props) +
-                    applyAll(props)
-                }
-                {...applyStyles(props)} {...applyHeight.applyHeightAttributes(props)}
-                tabIndex="0">{props.children}</div>
-        )
-    } else if (props.overlayIcon) {
+    if (props.overlayIcon) {
         return (
             <span className={
                 combineClasses(props) +
                 applyAll(props)
-            } {...applyStyles(props)} {...applyHeight.applyHeightAttributes(props)} uk-overlay-icon="">{props.children}</span>
+            } {...applyStyles(props)} {...applyHeight.applyHeightAttributes(props)}
+                  uk-overlay-icon="">{props.children}</span>
         )
     } else {
         return (
@@ -60,7 +50,6 @@ const combineClasses = (props) => {
         applyBackground(props) +
         applyHeight.applyHeightClasses(props) +
         applyText(props) +
-        applyAnimation(props) +
         applyClearingFloating(props) +
         applyOverflow(props) +
         applyInline(props) +

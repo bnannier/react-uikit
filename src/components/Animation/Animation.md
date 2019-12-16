@@ -166,3 +166,49 @@ import { Card, Panel } from '../';
 ### Origin Modifiers
 By default, scaling animations originate from the center.
 To modify this behavior, add one of the transformOrigin* prop from the Utility component.
+
+```jsx
+import { Card, Grid, Panel, Paragraph } from '../';
+
+<React.Fragment>
+    <Grid childWidthSmall="1-3">
+        <Panel animationToggle>
+            <Card default body animationScaleUp transformOriginBottomRight>
+                <Paragraph textCenter>Bottom Right</Paragraph>
+            </Card>
+        </Panel>
+        <Panel animationToggle>
+            <Card default body animationScaleUp transformOriginTopCenter>
+                <Paragraph textCenter>Bottom Right</Paragraph>
+            </Card>
+        </Panel>
+        <Panel animationToggle>
+            <Card default body animationScaleUp transformOriginBottomCenter>
+                <Paragraph textCenter>Bottom Right</Paragraph>
+            </Card>
+        </Panel>
+    </Grid>
+</React.Fragment>
+```
+
+### Ken Burns
+To add a simple Ken Burns effect, add the animationKenburns prop to any image.
+You can also apply the animationReverse or one of the transformOrigin* props from the Utility component to modify the effect.
+
+```jsx
+import { Animation, Grid, Panel, Image, Scrollspy } from '../';
+
+<React.Fragment>
+    <Grid small childWidthSmall="1-2">
+        <Panel>
+            <Panel overflowHidden>
+                <Scrollspy>
+                    <Animation>
+                        <Image src="https://getuikit.com/docs/images/dark.jpg" alt="Example image" />
+                    </Animation>
+                </Scrollspy>
+            </Panel>
+        </Panel>
+    </Grid>
+</React.Fragment>
+```

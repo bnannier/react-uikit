@@ -18,7 +18,7 @@ const Image = (props) =>{
             applyBorder(props) +
             applyBlend(props) +
             applyAll(props)
-        } {...applyHeight.applyHeightAttributes(props)} data-src={props.src} width={props.width} height={props.height} alt={props.alt} uk-img="">{props.children}</img>
+        } {...applyHeight.applyHeightAttributes(props)} src={props.src} width={props.width} height={props.height} alt={props.alt} uk-img="" uk-scrollspy={props.scrollspy}>{props.children}</img>
     )
 };
 

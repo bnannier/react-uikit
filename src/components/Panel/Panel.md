@@ -5,7 +5,7 @@ React-uikit uses panels to outline certain sections of your content. These can b
 
 | PROPS  | DESCRIPTION |
 | ----- | ----------- |
-| <span style="color:salmon">panel</span> | Add the pnael props to a <Panel> component to create a position context, set box-sizing to border-box, apply a clearfix and to remove the bottom margin of its last child element. |
+| <span style="color:salmon">panel</span> | Add the panel props to a Panel component to create a position context, set box-sizing to border-box, apply a clearfix and to remove the bottom margin of its last child element. |
 
 ```jsx
 import { Card, Grid, Panel } from '../';

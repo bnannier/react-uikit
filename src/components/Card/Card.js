@@ -8,7 +8,6 @@ import applyMargin from "../Common/applyMargin";
 import applyHeight from "../Common/applyHeight";
 import applyFlex from "../Common/applyFlex";
 import applyText from "../Common/applyText";
-import applyAnimation from "../Common/applyAnimation";
 import applyTransform from "../Common/applyTransform";
 import applyStyles from "../Common/applyStyles";
 import applyAll from "../Common/applyAll";
@@ -23,7 +22,6 @@ const Card = (props) => {
             applyHeight.applyHeightClasses(props) +
             applyFlex(props) +
             applyText(props) +
-            applyAnimation(props) +
             applyTransform(props) +
             applyAll(props)
         } style={{...applyStyles(props)}} {...applyHeight.applyHeightAttributes(props)}>{props.children}</div>
@@ -32,6 +30,7 @@ const Card = (props) => {
 
 const applyClasses = (props) => {
     return classNames(" uk-card",
+        `${props.class}`,
         {"uk-card-body": props.body},
         {"uk-card-default": props.default},
         {"uk-card-primary": props.primary},
