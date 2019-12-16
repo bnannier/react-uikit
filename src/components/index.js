@@ -15,4 +15,5 @@ export { default as Paragraph } from './Paragraph';
 export { default as Scrollspy } from './Scrollspy';
 export { default as Section } from './Section';
 export { default as Table } from './Table';
+export { default as Modal } from './Modal';
 
