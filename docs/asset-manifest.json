@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.df8e2024.chunk.css",
-    "main.js": "/build/main.429ce123.js",
-    "runtime-main.js": "/build/bundle.86c6ad91.js",
-    "build/2.8d774689.js": "/build/2.8d774689.js",
-    "build/2.8d774689.js.LICENSE": "/build/2.8d774689.js.LICENSE",
+    "main.css": "/static/css/main.96d2fed3.chunk.css",
+    "main.js": "/build/main.afce892e.js",
+    "runtime-main.js": "/build/bundle.e8ff9fe1.js",
+    "build/2.17ddbe12.js": "/build/2.17ddbe12.js",
+    "build/2.17ddbe12.js.LICENSE": "/build/2.17ddbe12.js.LICENSE",
     "index.html": "/index.html",
-    "precache-manifest.2344a3c9da54c71d491085080fa61828.js": "/precache-manifest.2344a3c9da54c71d491085080fa61828.js",
+    "precache-manifest.78a2bc031c9782fd1374a5033a8c809e.js": "/precache-manifest.78a2bc031c9782fd1374a5033a8c809e.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.df8e2024.chunk.css.map": "/static/css/main.df8e2024.chunk.css.map",
+    "static/css/main.96d2fed3.chunk.css.map": "/static/css/main.96d2fed3.chunk.css.map",
     "static/media/index.scss": "/static/media/Roboto-ThinItalic.35a9c89a.ttf"
   },
   "entrypoints": [
-    "build/bundle.86c6ad91.js",
-    "build/2.8d774689.js",
-    "static/css/main.df8e2024.chunk.css",
-    "build/main.429ce123.js"
+    "build/bundle.e8ff9fe1.js",
+    "build/2.17ddbe12.js",
+    "static/css/main.96d2fed3.chunk.css",
+    "build/main.afce892e.js"
   ]
 }
