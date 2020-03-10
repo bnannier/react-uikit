@@ -25,61 +25,61 @@ All animations themselves are implemented with CSS, so they do not require JavaS
 Add one of the following classes to the container to apply a different max-width.
 
 ```jsx
-import { Card, Grid, Panel } from '../';
+import { Animation, Card, Grid } from '../';
 
 <React.Fragment>
     <Grid childWidth="1-2" childWidthSmall="1-4" match>
-        <Panel animationToggle>
-            <Card default body animationFade textCenter>Fade</Card>
-        </Panel>
-        <Panel animationToggle>
-            <Card default body animationScaleUp textCenter>Scale Up</Card>
-        </Panel>
-        <Panel animationToggle>
-            <Card default body animationScaleDown textCenter>Scale Down</Card>
-        </Panel>
-        <Panel animationToggle>
-            <Card default body animationShake textCenter>Shake</Card>
-        </Panel>
+        <Animation fade>
+            <Card default body textCenter>Fade</Card>
+        </Animation>
+        <Animation scale up>
+            <Card default body textCenter>Scale Up</Card>
+        </Animation>
+        <Animation scale down>
+            <Card default body textCenter>Scale Down</Card>
+        </Animation>
+        <Animation shake>
+            <Card default body textCenter>Shake</Card>
+        </Animation>
 
-        <Panel animationToggle>
-            <Card default body animationSlideLeft textCenter>Left</Card>
-        </Panel>
-        <Panel animationToggle>
-            <Card default body animationSlideTop textCenter>Top</Card>
-        </Panel>
-        <Panel animationToggle>
-            <Card default body animationSlideBottom textCenter>Bottom</Card>
-        </Panel>
-        <Panel animationToggle>
-            <Card default body animationSlideRight textCenter>Right</Card>
-        </Panel>
+        <Animation slide left>
+            <Card default body textCenter>Left</Card>
+        </Animation>
+        <Animation slide top>
+            <Card default body textCenter>Top</Card>
+        </Animation>
+        <Animation slide bottom>
+            <Card default body textCenter>Bottom</Card>
+        </Animation>
+        <Animation slide right>
+            <Card default body textCenter>Right</Card>
+        </Animation>
 
-        <Panel animationToggle>
-            <Card default body animationSlideLeftSmall textCenter>Left Small</Card>
-        </Panel>
-        <Panel animationToggle>
-            <Card default body animationSlideTopSmall textCenter>Top Small</Card>
-        </Panel>
-        <Panel animationToggle>
-            <Card default body animationSlideBottomSmall textCenter>Bottom Small</Card>
-        </Panel>
-        <Panel animationToggle>
-            <Card default body animationSlideRightSmall textCenter>Right Small</Card>
-        </Panel>
+        <Animation small slide left>
+            <Card default body textCenter>Left Small</Card>
+        </Animation>
+        <Animation small slide top>
+            <Card default body textCenter>Top Small</Card>
+        </Animation>
+        <Animation small slide bottom>
+            <Card default body textCenter>Bottom Small</Card>
+        </Animation>
+        <Animation small slide right>
+            <Card default body textCenter>Right Small</Card>
+        </Animation>
 
-        <Panel animationToggle>
-            <Card default body animationSlideLeftMedium textCenter>Left Medium</Card>
-        </Panel>
-        <Panel animationToggle>
-            <Card default body animationSlideTopMedium textCenter>Top Medium</Card>
-        </Panel>
-        <Panel animationToggle>
-            <Card default body animationSlideBottomMedium textCenter>Bottom Medium</Card>
-        </Panel>
-        <Panel animationToggle>
-            <Card default body animationSlideRightMedium textCenter>Right Medium</Card>
-        </Panel>
+        <Animation medium slide left>
+            <Card default body textCenter>Left Medium</Card>
+        </Animation>
+        <Animation medium slide top>
+            <Card default body textCenter>Top Medium</Card>
+        </Animation>
+        <Animation medium slide bottom>
+            <Card default body textCenter>Bottom Medium</Card>
+        </Animation>
+        <Animation medium slide right>
+            <Card default body textCenter>Right Medium</Card>
+        </Animation>
     </Grid>
 </React.Fragment>
 ```
@@ -87,63 +87,62 @@ import { Card, Grid, Panel } from '../';
 ### Reverse Modifier
 By default, all animations are incoming. To reverse any animation, add the animationReverse prop.
 
-
 ```jsx
-import { Card, Grid, Panel } from '../';
+import { Animation, Card, Grid } from '../';
 
 <React.Fragment>
     <Grid childWidth="1-2" childWidthSmall="1-4" match>
-        <Panel animationToggle>
-            <Card default body animationFade animationReverse textCenter>Fade</Card>
-        </Panel>
-        <Panel animationToggle>
-            <Card default body animationScaleUp animationReverse textCenter>Scale Up</Card>
-        </Panel>
-        <Panel animationToggle>
-            <Card default body animationScaleDown animationReverse textCenter>Scale Down</Card>
-        </Panel>
-        <Panel animationToggle>
-            <Card default body animationShake animationReverse textCenter>Shake</Card>
-        </Panel>
+        <Animation fade reverse>
+            <Card default body textCenter>Fade</Card>
+        </Animation>
+        <Animation scale up reverse>
+            <Card default body textCenter>Scale Up</Card>
+        </Animation>
+        <Animation scale down reverse>
+            <Card default body textCenter>Scale Down</Card>
+        </Animation>
+        <Animation shake reverse>
+            <Card default body textCenter>Shake</Card>
+        </Animation>
 
-        <Panel animationToggle>
-            <Card default body animationSlideLeft animationReverse textCenter>Left</Card>
-        </Panel>
-        <Panel animationToggle>
-            <Card default body animationSlideTop animationReverse textCenter>Top</Card>
-        </Panel>
-        <Panel animationToggle>
-            <Card default body animationSlideBottom animationReverse textCenter>Bottom</Card>
-        </Panel>
-        <Panel animationToggle>
-            <Card default body animationSlideRight animationReverse textCenter>Right</Card>
-        </Panel>
+        <Animation slide left reverse>
+            <Card default body textCenter>Left</Card>
+        </Animation>
+        <Animation slide top reverse>
+            <Card default body textCenter>Top</Card>
+        </Animation>
+        <Animation slide bottom reverse>
+            <Card default body textCenter>Bottom</Card>
+        </Animation>
+        <Animation slide right reverse>
+            <Card default body textCenter>Right</Card>
+        </Animation>
 
-        <Panel animationToggle>
-            <Card default body animationSlideLeftSmall animationReverse textCenter>Left Small</Card>
-        </Panel>
-        <Panel animationToggle>
-            <Card default body animationSlideTopSmall animationReverse textCenter>Top Small</Card>
-        </Panel>
-        <Panel animationToggle>
-            <Card default body animationSlideBottomSmall animationReverse textCenter>Bottom Small</Card>
-        </Panel>
-        <Panel animationToggle>
-            <Card default body animationSlideRightSmall animationReverse textCenter>Right Small</Card>
-        </Panel>
+        <Animation small slide left reverse>
+            <Card default body textCenter>Left Small</Card>
+        </Animation>
+        <Animation small slide top reverse>
+            <Card default body textCenter>Top Small</Card>
+        </Animation>
+        <Animation small slide bottom reverse>
+            <Card default body textCenter>Bottom Small</Card>
+        </Animation>
+        <Animation small slide right reverse>
+            <Card default body textCenter>Right Small</Card>
+        </Animation>
 
-        <Panel animationToggle>
-            <Card default body animationSlideLeftMedium animationReverse textCenter>Left Medium</Card>
-        </Panel>
-        <Panel animationToggle>
-            <Card default body animationSlideTopMedium animationReverse textCenter>Top Medium</Card>
-        </Panel>
-        <Panel animationToggle>
-            <Card default body animationSlideBottomMedium animationReverse textCenter>Bottom Medium</Card>
-        </Panel>
-        <Panel animationToggle>
-            <Card default body animationSlideRightMedium animationReverse textCenter>Right Medium</Card>
-        </Panel>
+        <Animation medium slide left reverse>
+            <Card default body textCenter>Left Medium</Card>
+        </Animation>
+        <Animation medium slide top reverse>
+            <Card default body textCenter>Top Medium</Card>
+        </Animation>
+        <Animation medium slide bottom reverse>
+            <Card default body textCenter>Bottom Medium</Card>
+        </Animation>
+        <Animation medium slide right reverse>
+            <Card default body textCenter>Right Medium</Card>
+        </Animation>
     </Grid>
 </React.Fragment>
 ```
@@ -152,13 +151,13 @@ import { Card, Grid, Panel } from '../';
 To play animations at a faster speed, add the animationFast prop to the element.
 
 ```jsx
-import { Card, Panel } from '../';
+import { Animation, Card, Panel } from '../';
 
 <React.Fragment>
     <Panel widthSmall="1-3">
-        <Panel animationToggle>
-            <Card default body animationFast animationFade>Fade</Card>
-        </Panel>
+        <Animation fade fast>
+            <Card default body>Fade</Card>
+        </Animation>
     </Panel>
 </React.Fragment>
 ```
@@ -168,25 +167,42 @@ By default, scaling animations originate from the center.
 To modify this behavior, add one of the transformOrigin* prop from the Utility component.
 
 ```jsx
-import { Card, Grid, Panel, Paragraph } from '../';
+import { Animation, Card, Grid, Paragraph } from '../';
 
 <React.Fragment>
     <Grid childWidthSmall="1-3">
-        <Panel animationToggle>
-            <Card default body animationScaleUp transformOriginBottomRight>
+        <Animation sclae up origin top left>
+            <Card default body>
+                <Paragraph textCenter>Top Left</Paragraph>
+            </Card>
+        </Animation>
+        <Animation sclae up origin top center>
+            <Card default body>
+                <Paragraph textCenter>Top Center</Paragraph>
+            </Card>
+        </Animation>
+        <Animation sclae up origin top right>
+            <Card default body>
+                <Paragraph textCenter>Top Right</Paragraph>
+            </Card>
+        </Animation>
+    </Grid>
+    <Grid childWidthSmall="1-3">
+        <Animation sclae up origin bottom left>
+            <Card default body>
+                <Paragraph textCenter>Bottom Left</Paragraph>
+            </Card>
+        </Animation>
+        <Animation sclae up origin bottom center>
+            <Card default body>
+                <Paragraph textCenter>Bottom Center</Paragraph>
+            </Card>
+        </Animation>
+        <Animation sclae up origin bottom right>
+            <Card default body>
                 <Paragraph textCenter>Bottom Right</Paragraph>
             </Card>
-        </Panel>
-        <Panel animationToggle>
-            <Card default body animationScaleUp transformOriginTopCenter>
-                <Paragraph textCenter>Bottom Right</Paragraph>
-            </Card>
-        </Panel>
-        <Panel animationToggle>
-            <Card default body animationScaleUp transformOriginBottomCenter>
-                <Paragraph textCenter>Bottom Right</Paragraph>
-            </Card>
-        </Panel>
+        </Animation>
     </Grid>
 </React.Fragment>
 ```
@@ -196,18 +212,27 @@ To add a simple Ken Burns effect, add the animationKenburns prop to any image.
 You can also apply the animationReverse or one of the transformOrigin* props from the Utility component to modify the effect.
 
 ```jsx
-import { Animation, Grid, Panel, Image, Scrollspy } from '../';
+import { Animation, Grid, Image, Overflow, Panel, Scrollspy } from '../';
 
 <React.Fragment>
     <Grid small childWidthSmall="1-2">
         <Panel>
-            <Panel overflowHidden>
+            <Overflow hidden>
                 <Scrollspy>
-                    <Animation>
+                    <Animation kenBurns>
                         <Image src="https://getuikit.com/docs/images/dark.jpg" alt="Example image" />
                     </Animation>
                 </Scrollspy>
-            </Panel>
+            </Overflow>
+        </Panel>
+        <Panel>
+            <Overflow hidden>
+                <Scrollspy>
+                    <Animation kenBurns reverse>
+                        <Image src="https://getuikit.com/docs/images/dark.jpg" alt="Example image" />
+                    </Animation>
+                </Scrollspy>
+            </Overflow>
         </Panel>
     </Grid>
 </React.Fragment>

@@ -9,14 +9,21 @@ const Animation = (props) => {
         )
     } else {
         return (
-            <div className={"uk-animation-toggle" + applyClasses(props)} tabIndex="0">{props.children}</div>
+            <div className={"uk-animation-toggle "} tabIndex="0">{renderChildren(props)}</div>
         )
     }
 };
 
-const applyClasses = (props) => {
-    console.log(props);
+const renderChildren = (props) => {
+    return React.Children.map(props.children, (child) => {
+        return React.cloneElement(child, {
+                class: applyClasses(props)
+            }
+        );
+    })
+};
 
+const applyClasses = (props) => {
     return classNames(
         {"uk-animation-fade": props.fade},
 
@@ -38,11 +45,20 @@ const applyClasses = (props) => {
         {"uk-animation-slide-left-medium": props.slide && props.left && props.medium},
         {"uk-animation-slide-right-medium": props.slide && props.right && props.medium},
 
-        {"uk-animation-kenburns": props.kenBurns},
+        {"uk-animation-slide-right-medium": props.slide && props.right && props.medium},
+
+        {"uk-animation-scale-up uk-transform-origin-top-right": props.origin && props.top && props.right},
+        {"uk-animation-scale-up uk-transform-origin-top-center": props.origin && props.top && props.center},
+        {"uk-animation-scale-up uk-transform-origin-top-left": props.origin && props.top && props.left},
+
+        {"uk-animation-scale-up uk-transform-origin-bottom-right": props.origin && props.bottom && props.right},
+        {"uk-animation-scale-up uk-transform-origin-bottom-center": props.origin && props.bottom && props.center},
+        {"uk-animation-scale-up uk-transform-origin-bottom-left": props.origin && props.bottom && props.left},
+
         {"uk-animation-shake": props.shake},
-        {"uk-animation-stroke": props.stroke},
         {"uk-animation-reverse": props.reverse},
         {"uk-animation-fast": props.fast},
+        {"uk-animation-kenburns": props.kenBurns}
     )
 };
 
@@ -59,6 +75,8 @@ Animation.propTypes = {
 
     /** Allows the sub component to fade and slide  */
     slide: PropTypes.bool,
+    /** Allows the sub component to set the origin  */
+    origin: PropTypes.bool,
     /** The sub component fades and slides in from the top by its own height or width */
     top: PropTypes.bool,
     /** The sub component fades and slides in from the bottom by its own height or width */
@@ -84,6 +102,9 @@ Animation.propTypes = {
     /** Play animations at a faster speed */
     fast: PropTypes.bool,
 
+    /** Apply ScrollSpy related feature */
+    cls: PropTypes.bool,
+
     /** Sub components to be passed in */
     children: PropTypes.node,
 };
@@ -96,6 +117,7 @@ Animation.defaultProps = {
     down: false,
 
     slide: false,
+    origin: false,
     top: false,
     bottom: false,
     left: false,
@@ -109,6 +131,8 @@ Animation.defaultProps = {
     stroke: false,
     reverse: false,
     fast: false,
+
+    cls: false,
 
     children: undefined
 };

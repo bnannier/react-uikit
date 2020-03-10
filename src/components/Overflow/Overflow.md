@@ -4,7 +4,7 @@ https://getuikit.com/docs/Grid
 xxx
 
 ### Style modifiers
-xxx
+Hide the overflow
 
 ```jsx
 import { Grid } from '../';

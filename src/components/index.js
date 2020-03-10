@@ -10,10 +10,10 @@ export { default as Icon } from './Icon';
 export { default as Image } from './Image';
 export { default as Link } from './Link';
 export { default as List } from './List';
+export { default as Overflow } from './Overflow';
 export { default as Panel } from './Panel';
 export { default as Paragraph } from './Paragraph';
 export { default as Scrollspy } from './Scrollspy';
 export { default as Section } from './Section';
 export { default as Table } from './Table';
-export { default as Modal } from './Modal';
 

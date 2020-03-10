@@ -17,7 +17,7 @@ Using `widthExpand` property will automatically apply equal width to items, rega
 Often cards from the <a href='#/Card' target='blank'>Card component</a> are used inside a grid. This also goes for the following examples for visualization.
 
 ```jsx
-import { Card, Panel } from '../';
+import { Card, Grid, Panel } from '../';
 <React.Fragment>
     <Grid childWidthExpandSmall textCenter>
         <Panel>
@@ -47,7 +47,7 @@ To apply a different gap, add one of the following props.
 | <span style="color:salmon">collapse</span> | Add this class to remove the grid gap entirely. |
 
 ```jsx
-import { Card, Panel } from '../';
+import { Card, Grid, Panel } from '../';
 <React.Fragment>
     <Grid small childWidthExpandSmall textCenter>
         <Panel>
@@ -109,7 +109,7 @@ To apply a different gap to just the column or row, add one of the following pro
 | <div style="color:salmon">columnCollapse</div><div style="color:salmon">rowCollapse</div> | Add one of these props to remove the grid gap entirely from the column or row. |
 
 ```jsx
-import { Card, Panel } from '../';
+import { Card, Grid, Panel } from '../';
 <React.Fragment>
     <Grid columnSmall rowLarge childWidthSmall="1-3" textCenter>
         <Panel>
@@ -140,7 +140,7 @@ import { Card, Panel } from '../';
 You can easily extend your grid layout with nested grids.
 
 ```jsx
-import { Card, Panel } from '../';
+import { Card, Grid, Panel } from '../';
 <React.Fragment>
     <Grid childWidth="1-2" textCenter>
         <Panel>
@@ -164,7 +164,7 @@ import { Card, Panel } from '../';
 Add the `divider` prop to separate grid cells with lines. This class can be combined with the gap modifiers. As soon as the grid stacks, the divider lines will become horizontal.
 
 ```jsx
-import { Card, Panel } from '../';
+import { Card, Grid, Panel } from '../';
 <React.Fragment>
     <Grid divider childWidthExpandSmall>
         <Card>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Card>
@@ -180,7 +180,7 @@ import { Card, Panel } from '../';
 To match the height of the direct child of each cell, add the `match` prop. This is needed to match the height of cards from the <a href='#/Card' target='blank'>Card component</a>.
 
 ```jsx
-import { Card, Panel } from '../';
+import { Card, Grid, Panel } from '../';
 <React.Fragment>
     <Grid match childWidthExpandSmall textCenter>
         <Panel>
@@ -202,7 +202,7 @@ import { Card, Panel } from '../';
 You can also match the height of the direct child of just one cell. To do so, use Grid.ItemMatch component to the grid item whose child you want to match.
 
 ```jsx
-import { Card, Panel } from '../';
+import { Card, Grid, Panel } from '../';
 <React.Fragment>
     <Grid childWidthExpandSmall textCenter>
         <Grid.ItemMatch>
@@ -229,7 +229,7 @@ import { Card, Panel } from '../';
 For a more specific selection of the elements whose heights should be matched, add the target: SELECTOR option to the <a href='#/Height' target='blank'>Height component</a>.
 IMPORTANT!TODO Fix this part once <a href='#/Height' target='blank'>Height component</a> is ready
 ```jsx
-import { Card, Panel } from '../';
+import { Card, Grid, Panel } from '../';
 <React.Fragment>
     <Grid childWidthExpandSmall textCenter>
         <Grid.ItemMatch>
@@ -256,7 +256,7 @@ import { Card, Panel } from '../';
 The grid is mostly used in combination with the <a href='#/Width' target='blank'>Width component</a>. This allows for great flexibility when determining the column widths.
 
 ```jsx
-import { Card, Panel } from '../';
+import { Card, Grid, Panel } from '../';
 <React.Fragment>
     <Grid textCenter>
         <Panel widthAutoMedium>
@@ -278,7 +278,7 @@ import { Card, Panel } from '../';
 If the grid columns are evenly split, you can add one of the `childWidth*` props to the grid container instead of adding a class to each of the items.
 
 ```jsx
-import { Card, Panel } from '../';
+import { Card, Grid, Panel } from '../';
 <React.Fragment>
     <Grid childWidthSmall="1-2" childWidthMedium="1-3" textCenter>
         <Panel>
@@ -304,7 +304,7 @@ This allows you, for example, to flip the cells' display order for wider viewpor
 All this works together with the gap and divider modifiers.
 
 ```jsx
-import { Card, Panel } from '../';
+import { Card, Grid, Panel } from '../';
 <React.Fragment>
     <Grid small childWidthSmall="1-4" flexCenter textCenter>
         <Panel>
@@ -335,7 +335,7 @@ import { Card, Panel } from '../';
 If grid cells have different heights, a layout free of gaps can be created by adding `masonry` attribute.
 
 ```jsx
-import { Card, Panel } from '../';
+import { Card, Grid, Panel } from '../';
 <React.Fragment>
     <Grid small childWidthSmall="1-2" childWidthMedium="1-3" masonry>
         <Panel>
@@ -385,7 +385,7 @@ This effect can be applied to two types of markup.
 The following example uses three defined columns with three items each.
 
 ```jsx
-import { Card, Panel } from '../';
+import { Card, Grid, Panel } from '../';
 <React.Fragment>
     <Grid childWidthExpandSmall textCenter parallax={150}>
         <Panel>
@@ -409,7 +409,7 @@ import { Card, Panel } from '../';
 The parallax effect is also applied if grid columns wrap into the next row, as shown in the next example.
 
 ```jsx
-import { Card, Panel } from '../';
+import { Card, Grid, Panel } from '../';
 <React.Fragment>
     <Grid childWidthSmall="1-2" childWidthMedium="1-3" childWidthLarge="1-4"textCenter parallax={150}>
         <Panel>
