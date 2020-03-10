@@ -1,3 +1,3 @@
 # react-uikit
-Please visit our Docs Site for instructions  
-https://prodigy-labs-net.github.io/react-uikit
+Please visit our Docs Site for instructions
+https://bnannier.github.io/react-uikit
