@@ -245,8 +245,7 @@ import { Animation, Grid, Image, Overflow, Panel, Scrollspy } from '../';
             <Overflow hidden>
                 <Scrollspy>
                     <Animation kenBurns>
-                        <Image src="https://getuikit.com/docs/images/dark.jpg" alt="Example image" />
-                    </Animation>
+                        </Animation>
                 </Scrollspy>
             </Overflow>
         </Panel>
@@ -254,8 +253,7 @@ import { Animation, Grid, Image, Overflow, Panel, Scrollspy } from '../';
             <Overflow hidden>
                 <Scrollspy>
                     <Animation kenBurns reverse>
-                        <Image src="https://getuikit.com/docs/images/dark.jpg" alt="Example image" />
-                    </Animation>
+                        </Animation>
                 </Scrollspy>
             </Overflow>
         </Panel>
