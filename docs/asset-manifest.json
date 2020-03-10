@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.96d2fed3.chunk.css",
-    "main.js": "/build/main.afce892e.js",
+    "main.js": "/build/main.1a1a60f9.js",
     "runtime-main.js": "/build/bundle.e8ff9fe1.js",
-    "build/2.17ddbe12.js": "/build/2.17ddbe12.js",
-    "build/2.17ddbe12.js.LICENSE": "/build/2.17ddbe12.js.LICENSE",
+    "build/2.4a6c2a46.js": "/build/2.4a6c2a46.js",
+    "build/2.4a6c2a46.js.LICENSE": "/build/2.4a6c2a46.js.LICENSE",
     "index.html": "/index.html",
-    "precache-manifest.78a2bc031c9782fd1374a5033a8c809e.js": "/precache-manifest.78a2bc031c9782fd1374a5033a8c809e.js",
+    "precache-manifest.9599f556ed21b3aa8d113e2cb4812714.js": "/precache-manifest.9599f556ed21b3aa8d113e2cb4812714.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.96d2fed3.chunk.css.map": "/static/css/main.96d2fed3.chunk.css.map",
     "static/media/index.scss": "/static/media/Roboto-ThinItalic.35a9c89a.ttf"
   },
   "entrypoints": [
     "build/bundle.e8ff9fe1.js",
-    "build/2.17ddbe12.js",
+    "build/2.4a6c2a46.js",
     "static/css/main.96d2fed3.chunk.css",
-    "build/main.afce892e.js"
+    "build/main.1a1a60f9.js"
   ]
 }
