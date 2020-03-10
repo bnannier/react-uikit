@@ -2,27 +2,11 @@ https://getuikit.com/docs/animation
 
 #### A collection of smooth animations to use within your page.
 
-### Usage
-Add one of the animation props to any element.
-The animation is shown when the prop is added, so usually immediately on page load.
-To show the animation at another point, for example when the element enters the viewport, you would add the class using JavaScript — with the Scrollspy component for instance.
-This is what happens in many of react-uikit's components that make use of animations.
-All animations themselves are implemented with CSS, so they do not require JavaScript to play.
 
-| PROPS  | DESCRIPTION |
+### Fade Modifier
+| PROPS | DESCRIPTION |
 | ----- | ----------- |
-| <span style="color:salmon">animationToggle</span> | To toggle an animation on hover or focus, add the animationToggle prop to a parent element. |
-| <span style="color:salmon">animationFade</span> | The element fades in. |
-| <span style="color:salmon">animationScaleUp</span><br /><span style="color:salmon">animationScaleDown</span> | The element fades in and scales up or down. |
-| <span style="color:salmon">animationSlideTop</span><br /><span style="color:salmon">animationSlideBottom</span><br /><span style="color:salmon">animationSlideLeft</span><br /><span style="color:salmon">animationSlideRight</span> | The element fades and slides in from the top, bottom, left or right by its own height or width. |
-| <span style="color:salmon">animationSlideTopSmall</span><br /><span style="color:salmon">animationSlideBottomSmall</span><br /><span style="color:salmon">animationSlideLeftSmall</span><br /><span style="color:salmon">animationSlideRightSmall</span> | The element fades and slides in from the top, bottom, left or right with a smaller distance which is specified by a fixed pixel value. |
-| <span style="color:salmon">animationSlideTopMedium</span><br /><span style="color:salmon">animationSlideBottomMedium</span><br /><span style="color:salmon">animationSlideLeftMedium</span><br /><span style="color:salmon">animationSlideRightMedium</span> | The element fades and slides in from the top, bottom, left or right with a medium distance which is specified by a fixed pixel value. |
-| <span style="color:salmon">animationKenBurns</span> | The element scales very slowly up without fading in. |
-| <span style="color:salmon">animationShake</span> | The element shakes. |
-| <span style="color:salmon">animationStroke</span> | The SVG element strokes are drawn. |
-
-### Size Modifiers
-Add one of the following classes to the container to apply a different max-width.
+| <span style="color:salmon">fade</span> | The element fades in. |
 
 ```jsx
 import { Animation, Card, Grid } from '../';
@@ -32,123 +16,155 @@ import { Animation, Card, Grid } from '../';
         <Animation fade>
             <Card default body textCenter>Fade</Card>
         </Animation>
-        <Animation scale up>
-            <Card default body textCenter>Scale Up</Card>
-        </Animation>
-        <Animation scale down>
-            <Card default body textCenter>Scale Down</Card>
-        </Animation>
-        <Animation shake>
-            <Card default body textCenter>Shake</Card>
-        </Animation>
-
-        <Animation slide left>
-            <Card default body textCenter>Left</Card>
-        </Animation>
-        <Animation slide top>
-            <Card default body textCenter>Top</Card>
-        </Animation>
-        <Animation slide bottom>
-            <Card default body textCenter>Bottom</Card>
-        </Animation>
-        <Animation slide right>
-            <Card default body textCenter>Right</Card>
-        </Animation>
-
-        <Animation small slide left>
-            <Card default body textCenter>Left Small</Card>
-        </Animation>
-        <Animation small slide top>
-            <Card default body textCenter>Top Small</Card>
-        </Animation>
-        <Animation small slide bottom>
-            <Card default body textCenter>Bottom Small</Card>
-        </Animation>
-        <Animation small slide right>
-            <Card default body textCenter>Right Small</Card>
-        </Animation>
-
-        <Animation medium slide left>
-            <Card default body textCenter>Left Medium</Card>
-        </Animation>
-        <Animation medium slide top>
-            <Card default body textCenter>Top Medium</Card>
-        </Animation>
-        <Animation medium slide bottom>
-            <Card default body textCenter>Bottom Medium</Card>
-        </Animation>
-        <Animation medium slide right>
-            <Card default body textCenter>Right Medium</Card>
-        </Animation>
     </Grid>
 </React.Fragment>
 ```
 
-### Reverse Modifier
-By default, all animations are incoming. To reverse any animation, add the animationReverse prop.
+
+### Scale Modifier
+| PROPS | DESCRIPTION |
+| ----- | ----------- |
+| <span style="color:salmon">scale up</span>| The element fades in and scales up. |
+| <span style="color:salmon">scale down</span>| The element fades in and scales down. |
 
 ```jsx
 import { Animation, Card, Grid } from '../';
 
 <React.Fragment>
     <Grid childWidth="1-2" childWidthSmall="1-4" match>
-        <Animation fade reverse>
-            <Card default body textCenter>Fade</Card>
-        </Animation>
-        <Animation scale up reverse>
+        <Animation scale up>
             <Card default body textCenter>Scale Up</Card>
         </Animation>
-        <Animation scale down reverse>
+        <Animation scale down>
             <Card default body textCenter>Scale Down</Card>
-        </Animation>
-        <Animation shake reverse>
-            <Card default body textCenter>Shake</Card>
-        </Animation>
-
-        <Animation slide left reverse>
-            <Card default body textCenter>Left</Card>
-        </Animation>
-        <Animation slide top reverse>
-            <Card default body textCenter>Top</Card>
-        </Animation>
-        <Animation slide bottom reverse>
-            <Card default body textCenter>Bottom</Card>
-        </Animation>
-        <Animation slide right reverse>
-            <Card default body textCenter>Right</Card>
-        </Animation>
-
-        <Animation small slide left reverse>
-            <Card default body textCenter>Left Small</Card>
-        </Animation>
-        <Animation small slide top reverse>
-            <Card default body textCenter>Top Small</Card>
-        </Animation>
-        <Animation small slide bottom reverse>
-            <Card default body textCenter>Bottom Small</Card>
-        </Animation>
-        <Animation small slide right reverse>
-            <Card default body textCenter>Right Small</Card>
-        </Animation>
-
-        <Animation medium slide left reverse>
-            <Card default body textCenter>Left Medium</Card>
-        </Animation>
-        <Animation medium slide top reverse>
-            <Card default body textCenter>Top Medium</Card>
-        </Animation>
-        <Animation medium slide bottom reverse>
-            <Card default body textCenter>Bottom Medium</Card>
-        </Animation>
-        <Animation medium slide right reverse>
-            <Card default body textCenter>Right Medium</Card>
         </Animation>
     </Grid>
 </React.Fragment>
 ```
 
+
+### Shake Modifier
+| PROPS | DESCRIPTION |
+| ----- | ----------- |
+| <span style="color:salmon">shake</span> | The element shakes. |
+
+```jsx
+import { Animation, Card, Grid } from '../';
+
+<React.Fragment>
+    <Grid childWidth="1-2" childWidthSmall="1-4" match>
+        <Animation shake>
+            <Card default body textCenter>Shake</Card>
+        </Animation>
+    </Grid>
+</React.Fragment>
+```
+
+
+### Slide Modifier
+| PROPS | DESCRIPTION |
+| ----- | ----------- |
+| <span style="color:salmon">slide left</span>| The element fades and slides in from the left. |
+| <span style="color:salmon">slide top</span>| The element fades and slides in from the top. |
+| <span style="color:salmon">slide bottom</span>| The element fades and slides in from the bottom. |
+| <span style="color:salmon">slide right</span>| The element fades and slides in from the right. |
+
+```jsx
+import { Animation, Card, Grid } from '../';
+
+<React.Fragment>
+    <Grid childWidth="1-2" childWidthSmall="1-4" match>
+        <Animation slide left>
+            <Card default body textCenter>Slide Left</Card>
+        </Animation>
+        <Animation slide top>
+            <Card default body textCenter>Slide Top</Card>
+        </Animation>
+        <Animation slide bottom>
+            <Card default body textCenter>Slide Bottom</Card>
+        </Animation>
+        <Animation slide right>
+            <Card default body textCenter>Slide Right</Card>
+        </Animation>
+    </Grid>
+</React.Fragment>
+```
+
+
+### Reverse Modifier
+| PROPS | DESCRIPTION |
+| ----- | ----------- |
+| <span style="color:salmon">reverse slide left</span>| The element fades and slides in from the middle to left. |
+| <span style="color:salmon">reverse slide top</span>| The element fades and slides in from the middle to top. |
+| <span style="color:salmon">reverse slide bottom</span>| The element fades and slides in from the middle to bottom. |
+| <span style="color:salmon">reverse slide right</span>| The element fades and slides in from the middle to right. |
+
+```jsx
+import { Animation, Card, Grid } from '../';
+
+<React.Fragment>
+    <Grid childWidth="1-2" childWidthSmall="1-4" match>
+        <Animation reverse slide left>
+            <Card default body textCenter>Reverse Slide Left</Card>
+        </Animation>
+        <Animation reverse slide top>
+            <Card default body textCenter>Reverse Slide Top</Card>
+        </Animation>
+        <Animation reverse slide bottom>
+            <Card default body textCenter>Reverse Slide Bottom</Card>
+        </Animation>
+        <Animation reverse slide right>
+            <Card default body textCenter>Reverse Slide Right</Card>
+        </Animation>
+    </Grid>
+</React.Fragment>
+```
+
+
+### Slide Duration Modifier
+| PROPS | DESCRIPTION |
+| ----- | ----------- |
+| <span style="color:salmon">small</span>| The element fades and slides in from the top. |
+| <span style="color:salmon">medium</span>| The element fades and slides in from the top. |
+
+```jsx
+import { Animation, Card, Grid } from '../';
+
+<React.Fragment>
+    <Grid childWidth="1-2" childWidthSmall="1-4" match>
+        <Animation small slide left>
+            <Card default body textCenter>Slide Left Small</Card>
+        </Animation>
+        <Animation small slide top>
+            <Card default body textCenter>Slide Top Small</Card>
+        </Animation>
+        <Animation small slide bottom>
+            <Card default body textCenter>Slide Bottom Small</Card>
+        </Animation>
+        <Animation small slide right>
+            <Card default body textCenter>Slide Right Small</Card>
+        </Animation>
+        <Animation medium slide left>
+            <Card default body textCenter>Slide Left Medium</Card>
+        </Animation>
+        <Animation medium slide top>
+            <Card default body textCenter>Slide Top Medium</Card>
+        </Animation>
+        <Animation medium slide bottom>
+            <Card default body textCenter>Slide Bottom Medium</Card>
+        </Animation>
+        <Animation medium slide right>
+            <Card default body textCenter>Slide Right Medium</Card>
+        </Animation>
+    </Grid>
+</React.Fragment>
+```
+
+
 ### Fast Modifier
-To play animations at a faster speed, add the animationFast prop to the element.
+| PROPS | DESCRIPTION |
+| ----- | ----------- |
+| <span style="color:salmon">fast</span>| To play animations at a faster speed, add the fast prop to the element. |
 
 ```jsx
 import { Animation, Card, Panel } from '../';
@@ -156,15 +172,22 @@ import { Animation, Card, Panel } from '../';
 <React.Fragment>
     <Panel widthSmall="1-3">
         <Animation fade fast>
-            <Card default body>Fade</Card>
+            <Card default body>Fade Fast</Card>
         </Animation>
     </Panel>
 </React.Fragment>
 ```
 
+
 ### Origin Modifiers
-By default, scaling animations originate from the center.
-To modify this behavior, add one of the transformOrigin* prop from the Utility component.
+| PROPS | DESCRIPTION |
+| ----- | ----------- |
+| <span style="color:salmon">origin top left</span>| Animation originates from the top left. |
+| <span style="color:salmon">origin top center</span>| Animation originates from the top center. |
+| <span style="color:salmon">origin top right</span>| Animation originates from the top right. |
+| <span style="color:salmon">origin bottom left</span>| Animation originates from the bottom left. |
+| <span style="color:salmon">origin bottom center</span>| Animation originates from the bottom center. |
+| <span style="color:salmon">origin bottom right</span>| Animation originates from the bottom right. |
 
 ```jsx
 import { Animation, Card, Grid, Paragraph } from '../';
@@ -173,43 +196,45 @@ import { Animation, Card, Grid, Paragraph } from '../';
     <Grid childWidthSmall="1-3">
         <Animation sclae up origin top left>
             <Card default body>
-                <Paragraph textCenter>Top Left</Paragraph>
+                <Paragraph textCenter>Origin Top Left</Paragraph>
             </Card>
         </Animation>
         <Animation sclae up origin top center>
             <Card default body>
-                <Paragraph textCenter>Top Center</Paragraph>
+                <Paragraph textCenter>Origin Top Center</Paragraph>
             </Card>
         </Animation>
         <Animation sclae up origin top right>
             <Card default body>
-                <Paragraph textCenter>Top Right</Paragraph>
+                <Paragraph textCenter>Origin Top Right</Paragraph>
             </Card>
         </Animation>
     </Grid>
     <Grid childWidthSmall="1-3">
         <Animation sclae up origin bottom left>
             <Card default body>
-                <Paragraph textCenter>Bottom Left</Paragraph>
+                <Paragraph textCenter>Origin Bottom Left</Paragraph>
             </Card>
         </Animation>
         <Animation sclae up origin bottom center>
             <Card default body>
-                <Paragraph textCenter>Bottom Center</Paragraph>
+                <Paragraph textCenter>Origin Bottom Center</Paragraph>
             </Card>
         </Animation>
         <Animation sclae up origin bottom right>
             <Card default body>
-                <Paragraph textCenter>Bottom Right</Paragraph>
+                <Paragraph textCenter>Origin Bottom Right</Paragraph>
             </Card>
         </Animation>
     </Grid>
 </React.Fragment>
 ```
 
-### Ken Burns
-To add a simple Ken Burns effect, add the animationKenburns prop to any image.
-You can also apply the animationReverse or one of the transformOrigin* props from the Utility component to modify the effect.
+### Ken Burns Modifier
+| PROPS | DESCRIPTION |
+| ----- | ----------- |
+| <span style="color:salmon">kenBurns</span>| Adds the Ken Burns effect with the kenBurns prop. |
+| <span style="color:salmon">kenBurns reverse</span>| Adds the reverse Ken Burns effect with the reverse prop. |
 
 ```jsx
 import { Animation, Grid, Image, Overflow, Panel, Scrollspy } from '../';
