@@ -37,7 +37,7 @@
     "@babel/plugin-proposal-export-default-from": "^7.5.2",
     "@babel/plugin-transform-arrow-functions": "^7.2.0",
     "lint-staged": "^9.4.3",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "prettier": "^1.19.1",
     "react-styleguidist": "^10.2.1"
   }
